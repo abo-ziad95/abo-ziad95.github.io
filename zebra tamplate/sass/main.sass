@@ -1,0 +1,462 @@
+@import "_base/fonts"
+@import "_base/grid"
+@import "_base/reset"
+html
+  font-size: 10px
+// //////////////////////////////////////
+              BLOCKS
+// //////////////////////////////////////
+// //////////////////////////////////////
+              NAV
+// //////////////////////////////////////
+.navBar
+  background-color: rgba(255, 255, 255, 0.7)
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  text-align: center
+  z-index: 10
+  &__logo
+    color: #626262
+    font-size: 3.8rem
+    text-transform: uppercase
+    width: 160px
+    font-family: HelveticaBold
+    margin: 27px 0 23px 18px
+    line-hieght: 0
+    span
+      line-hieght: 0
+      color: #56c2b9
+  &__menu
+    font-size: 1.8rem
+    width: 593px
+    font-family: Helvetica
+    &__list
+      display: flex
+      justify-content: flex-end
+      &--item
+        margin-top: 40px
+        &:hover .subMenu
+          display: flex
+
+        &--link
+          padding: 40px 13px 29px 13px
+          color: #626262
+          &:hover
+            border-bottom: 1px solid #d94855
+            background-color: #cf1a2b
+            color: #fff
+.navBar__cart
+  width: 253px
+  margin-top: 32px
+  margin-right: 18px
+  &--item
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    position: relative
+.cart__sum
+  padding: 4px 15px 0 12px
+  color: #b1b1b1
+  font-size: 2.4rem
+.down
+  margin-top: 8px
+// //////////////////////////////////////
+            SUBMENU
+// //////////////////////////////////////
+.subMenu
+  width: 605px
+  display: flex
+  flex-direction: row
+  background-color: #cf1a2b
+  position: absolute
+  top: 88px
+  &__logo
+    color: #fff
+    font-size: 3.8rem
+    text-transform: uppercase
+    &--text
+      width: 183px
+      font-family: HelveticaBold
+      padding: 20px 0 12px 35px
+      border-bottom: 1px solid #d94855
+      span
+        color: #fec8cd
+    &--img
+      padding: 50px 0 50px 72px
+  &__list
+    width: 193px
+    border-left: 1px solid #d94855
+    &--item
+      font-size: 1.6rem
+      margin-top: 24px
+      margin-left: 36px
+      color: #f2bfc4
+    &--item:last-child
+      margin-bottom: 25px
+.isHide
+  display: none
+// //////////////////////////////////////
+            HEADER
+// //////////////////////////////////////
+.header
+  background: url('../img/header/bgHeader.jpg') no-repeat
+  height: 655px
+  position: relative
+.left
+  position: absolute
+  top: 50%
+  left: 30px
+.right
+  position: absolute
+  top: 50%
+  right: 30px
+// //////////////////////////////////////
+            SALES
+// //////////////////////////////////////
+.sales
+  background-color: #fff
+.sales__carts
+  display: flex
+  justify-content: space-between
+  color: #fff
+  text-transform: uppercase
+  font-family: HelveticaBold
+  width: 100%
+  &--1
+    width: 245px
+    height: 250px
+    margin: 40px 0
+    background-color: #58dbd3
+    &__info
+      margin: 20px 0 0 24px
+      position: relative
+      &::after
+        content: ''
+        display: block
+        background: url('../img/sales/blackT.png') no-repeat
+        width: 135px
+        height: 240px
+        position: absolute
+        top: -15px
+        left: 89px
+      &__title
+        font-size: 3rem
+        padding-bottom: 25px
+      &__subtitle
+        font-size: 2rem
+        padding-bottom: 25px
+      &__price
+        color: #12867f
+        font-size: 4.9rem
+  &--2
+    width: 245px
+    height: 250px
+    margin: 40px 0
+    background-color: #e4ce9a
+    &__info
+      margin: 20px 0 0 24px
+      position: relative
+      &::after
+        content: ''
+        display: block
+        background: url('../img/sales/yallowT.png') no-repeat
+        width: 143px
+        height: 185px
+        position: absolute
+        top: 46px
+        left: 78px
+      &__title
+        font-size: 3rem
+        padding-bottom: 100px
+      &__price
+        color: #12867f
+        font-size: 4.9rem
+        padding-bottom: 25p
+  &--3
+    width: 245px
+    height: 250px
+    margin: 40px 0
+    background-color: #ffa7ce
+    &__info
+      margin: 20px 0 0 24px
+      position: relative
+      &::after
+        content: ''
+        display: block
+        background: url('../img/sales/greyT.png') no-repeat
+        width: 135px
+        height: 160px
+        position: absolute
+        top: 72px
+        left: 86px
+      &__title
+        font-size: 3rem
+        padding-bottom: 5px
+      &__subtitle
+        font-size: 2rem
+        padding-bottom: 25px
+      &__price
+        color: #12867f
+        font-size: 4.9rem
+  &--4
+    width: 245px
+    height: 250px
+    margin: 40px 0
+    background-color: #f2ca66
+    &__info
+      margin: 10px 0 0 24px
+      &__title
+        font-size: 10rem
+        transform: rotate(-180deg)
+      &__subtitle
+        font-size: 6.3rem
+        padding: 20px 0 0 25px
+        &__text
+          color: #f2ca66
+          font-size: 2.6rem
+          width: 140px
+          height: 40px
+          background-color: #fff
+          text-align: center
+          padding-top: 8px
+          box-sizing: border-box
+          margin-left: -24px
+// //////////////////////////////////////
+            SALES
+// //////////////////////////////////////
+.catigory
+  background: url('../img/cat/catbg.jpg') no-repeat
+  width: 100%
+  height: 562px
+  overflow: hidden
+  &__items
+    display: flex
+    width: 100%
+    position: relative
+    &--1
+      width: 180px
+      height: 202px
+      background-color: rgba(171, 237, 233, 0.5)
+      border-radius: 50%
+      position: absolute
+      left: -101px
+      top: 300px
+    &--2
+      width: 180px
+      height: 202px
+      background-color: rgba(171, 237, 233, 0.5)
+      border-radius: 50%
+      padding: 20px
+      position: absolute
+      left: 60px
+      top: 250px
+      box-sizing: border-box
+      &::after
+        position: absolute
+        z-index: 1
+        background: url('../img/cat/t.png') no-repeat
+        content: ''
+        width: 115px
+        height: 115px
+        left: 35px
+        top: 40px
+    &--3
+      width: 180px
+      height: 202px
+      background-color: rgba(171, 237, 233, 0.5)
+      border-radius: 50%
+      padding: 20px
+      position: absolute
+      left: 210px
+      top: 300px
+      box-sizing: border-box
+      &::after
+        position: absolute
+        z-index: 1
+        background: url('../img/cat/shoes.png') no-repeat
+        content: ''
+        width: 115px
+        height: 115px
+        left: 35px
+        top: 60px
+    &--4
+      width: 180px
+      height: 202px
+      background-color: rgba(171, 237, 233, 0.5)
+      border-radius: 50%
+      padding: 20px
+      position: absolute
+      left: 360px
+      top: 250px
+      box-sizing: border-box
+      &::after
+        position: absolute
+        z-index: 1
+        background: url('../img/cat/t.png') no-repeat
+        content: ''
+        width: 115px
+        height: 115px
+        left: 35px
+        top: 40px
+    &--5
+      width: 180px
+      height: 202px
+      background-color: rgba(171, 237, 233, 0.5)
+      border-radius: 50%
+      padding: 20px
+      position: absolute
+      left: 510px
+      top: 300px
+      box-sizing: border-box
+      &::after
+        position: absolute
+        z-index: 1
+        background: url('../img/cat/j.png') no-repeat
+        content: ''
+        width: 115px
+        height: 115px
+        left: 60px
+        top: 45px
+    &--6
+      width: 180px
+      height: 202px
+      background-color: rgba(171, 237, 233, 0.5)
+      border-radius: 50%
+      padding: 20px
+      position: absolute
+      left: 660px
+      top: 250px
+      box-sizing: border-box
+      &::after
+        position: absolute
+        z-index: 1
+        background: url('../img/cat/t.png') no-repeat
+        content: ''
+        width: 115px
+        height: 115px
+        left: 35px
+        top: 40px
+    &--7
+      width: 180px
+      height: 202px
+      background-color: rgba(171, 237, 233, 0.5)
+      border-radius: 50%
+      padding: 20px
+      position: absolute
+      left: 810px
+      top: 300px
+      box-sizing: border-box
+      &::after
+        position: absolute
+        z-index: 1
+        background: url('../img/cat/j.png') no-repeat
+        content: ''
+        width: 115px
+        height: 115px
+        left: 60px
+        top: 45px
+    &--8
+      width: 180px
+      height: 202px
+      background-color: rgba(171, 237, 233, 0.5)
+      border-radius: 50%
+      padding: 20px
+      position: absolute
+      left: 960px
+      top: 250px
+      box-sizing: border-box
+      &::after
+        position: absolute
+        z-index: 1
+        background: url('../img/cat/shoes.png') no-repeat
+        content: ''
+        width: 115px
+        height: 115px
+        left: 35px
+        top: 60px
+    &--9
+      width: 180px
+      height: 202px
+      background-color: rgba(171, 237, 233, 0.5)
+      border-radius: 50%
+      padding: 20px
+      position: absolute
+      right: -70px
+      top: 300px
+      box-sizing: border-box
+////////////////////////////////////////
+            LEVIS
+////////////////////////////////////////
+.levis
+  width: 100%
+  background-color: #fff
+  &__info
+    width: 100%
+    position: relative
+    display: flex
+    flex-direction: row
+    &::after
+      position: absolute
+      background: url('../img/levis/levis.jpg') no-repeat
+      width: 380px
+      height: 175px
+      top: -16px
+      left: 14px
+      z-index: 1
+      content: ''
+    &--l
+      position: absolute
+      top: -16px
+      left: 360px
+    &--r
+      position: absolute
+      top: -16px
+    &__text
+      width: 520px
+      height: 500px
+      padding: 200px 10px 0 50px
+      box-sizing: border-box
+      p
+        font-size: 5rem
+        font-family: HelveticaBold
+        text-transform: capitalize
+      &--l
+        font-size: 1.4rem
+        font-family: HelveticaUltraLight
+      &__price
+        font-size: 3.4rem
+        font-family: HelveticaRegular
+        padding-top: 50px
+        a
+          font-size: 2.5rem
+          background-color: #cf1a2b
+          color: #fff
+          padding: 10px 5px
+          margin-left: 90px
+        span
+          font-family: HelveticaBold
+  &__items
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    margin: 50px 0
+    &--1
+      border: 1px solid black
+      &:hover
+        border: 1px solid grey
+footer
+  background-color: #1b2330
+.footer
+  dispaly: flex
+  justify-content: space-between
+  &__icons
+    img
+      margin-left: 20px
+      margin-top: 30px
+.subtitle
+  font-size: 1rem
+  font-family: HelveticaRegular
+.footer__h
+  width: 500px

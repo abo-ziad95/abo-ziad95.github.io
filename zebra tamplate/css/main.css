@@ -1,0 +1,798 @@
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("../fonts/HelveticaBold/HelveticaBold.eot");
+  src: url("../fonts/HelveticaBold/HelveticaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaBold/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold/HelveticaBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HelveticaUltraLight";
+  src: url("../fonts/HelveticaUltraLight/HelveticaUltraLight.eot");
+  src: url("../fonts/HelveticaUltraLight/HelveticaUltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaUltraLight/HelveticaUltraLight.woff") format("woff"), url("../fonts/HelveticaUltraLight/HelveticaUltraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HelveticaRegular";
+  src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
+  src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"), url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/grid.sass */
+.conteiner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* line 4, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/grid.sass */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 1, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/reset.sass */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/reset.sass */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/reset.sass */
+body {
+  line-height: 1;
+}
+
+/* line 29, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/reset.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/reset.sass */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 43, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/reset.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 4, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+html {
+  font-size: 10px;
+}
+
+/* line 12, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+/* line 21, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__logo {
+  color: #626262;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  width: 160px;
+  font-family: HelveticaBold;
+  margin: 27px 0 23px 18px;
+  line-hieght: 0;
+}
+
+/* line 29, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__logo span {
+  line-hieght: 0;
+  color: #56c2b9;
+}
+
+/* line 32, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__menu {
+  font-size: 1.8rem;
+  width: 593px;
+  font-family: Helvetica;
+}
+
+/* line 36, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__menu__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 39, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__menu__list--item {
+  margin-top: 40px;
+}
+
+/* line 41, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__menu__list--item:hover .subMenu {
+  display: flex;
+}
+
+/* line 44, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__menu__list--item--link {
+  padding: 40px 13px 29px 13px;
+  color: #626262;
+}
+
+/* line 47, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__menu__list--item--link:hover {
+  border-bottom: 1px solid #d94855;
+  background-color: #cf1a2b;
+  color: #fff;
+}
+
+/* line 51, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__cart {
+  width: 253px;
+  margin-top: 32px;
+  margin-right: 18px;
+}
+
+/* line 55, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.navBar__cart--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* line 60, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.cart__sum {
+  padding: 4px 15px 0 12px;
+  color: #b1b1b1;
+  font-size: 2.4rem;
+}
+
+/* line 64, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.down {
+  margin-top: 8px;
+}
+
+/* line 69, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.subMenu {
+  width: 605px;
+  display: flex;
+  flex-direction: row;
+  background-color: #cf1a2b;
+  position: absolute;
+  top: 88px;
+}
+
+/* line 76, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.subMenu__logo {
+  color: #fff;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+}
+
+/* line 80, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.subMenu__logo--text {
+  width: 183px;
+  font-family: HelveticaBold;
+  padding: 20px 0 12px 35px;
+  border-bottom: 1px solid #d94855;
+}
+
+/* line 85, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.subMenu__logo--text span {
+  color: #fec8cd;
+}
+
+/* line 87, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.subMenu__logo--img {
+  padding: 50px 0 50px 72px;
+}
+
+/* line 89, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.subMenu__list {
+  width: 193px;
+  border-left: 1px solid #d94855;
+}
+
+/* line 92, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.subMenu__list--item {
+  font-size: 1.6rem;
+  margin-top: 24px;
+  margin-left: 36px;
+  color: #f2bfc4;
+}
+
+/* line 97, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.subMenu__list--item:last-child {
+  margin-bottom: 25px;
+}
+
+/* line 99, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.isHide {
+  display: none;
+}
+
+/* line 104, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.header {
+  background: url("../img/header/bgHeader.jpg") no-repeat;
+  background-size: cover;
+  height: 655px;
+  position: relative;
+}
+
+/* line 108, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.left {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+}
+
+/* line 112, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.right {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+
+/* line 119, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales {
+  background-color: #fff;
+}
+
+/* line 121, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: HelveticaBold;
+  width: 100%;
+}
+
+/* line 128, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--1 {
+  width: 245px;
+  height: 250px;
+  margin: 40px 0;
+  background-color: #58dbd3;
+}
+
+/* line 133, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--1__info {
+  margin: 20px 0 0 24px;
+  position: relative;
+}
+
+/* line 136, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--1__info::after {
+  content: '';
+  display: block;
+  background: url("../img/sales/blackT.png") no-repeat;
+  width: 135px;
+  height: 240px;
+  position: absolute;
+  top: -15px;
+  left: 89px;
+}
+
+/* line 145, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--1__info__title {
+  font-size: 3rem;
+  padding-bottom: 25px;
+}
+
+/* line 148, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--1__info__subtitle {
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
+
+/* line 151, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--1__info__price {
+  color: #12867f;
+  font-size: 4.9rem;
+}
+
+/* line 154, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--2 {
+  width: 245px;
+  height: 250px;
+  margin: 40px 0;
+  background-color: #e4ce9a;
+}
+
+/* line 159, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--2__info {
+  margin: 20px 0 0 24px;
+  position: relative;
+}
+
+/* line 162, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--2__info::after {
+  content: '';
+  display: block;
+  background: url("../img/sales/yallowT.png") no-repeat;
+  width: 143px;
+  height: 185px;
+  position: absolute;
+  top: 46px;
+  left: 78px;
+}
+
+/* line 171, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--2__info__title {
+  font-size: 3rem;
+  padding-bottom: 100px;
+}
+
+/* line 174, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--2__info__price {
+  color: #12867f;
+  font-size: 4.9rem;
+  padding-bottom: 25p;
+}
+
+/* line 178, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--3 {
+  width: 245px;
+  height: 250px;
+  margin: 40px 0;
+  background-color: #ffa7ce;
+}
+
+/* line 183, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--3__info {
+  margin: 20px 0 0 24px;
+  position: relative;
+}
+
+/* line 186, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--3__info::after {
+  content: '';
+  display: block;
+  background: url("../img/sales/greyT.png") no-repeat;
+  width: 135px;
+  height: 160px;
+  position: absolute;
+  top: 72px;
+  left: 86px;
+}
+
+/* line 195, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--3__info__title {
+  font-size: 3rem;
+  padding-bottom: 5px;
+}
+
+/* line 198, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--3__info__subtitle {
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
+
+/* line 201, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--3__info__price {
+  color: #12867f;
+  font-size: 4.9rem;
+}
+
+/* line 204, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--4 {
+  width: 245px;
+  height: 250px;
+  margin: 40px 0;
+  background-color: #f2ca66;
+}
+
+/* line 209, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--4__info {
+  margin: 10px 0 0 24px;
+}
+
+/* line 211, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--4__info__title {
+  font-size: 10rem;
+  transform: rotate(-180deg);
+}
+
+/* line 214, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--4__info__subtitle {
+  font-size: 6.3rem;
+  padding: 20px 0 0 25px;
+}
+
+/* line 217, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.sales__carts--4__info__subtitle__text {
+  color: #f2ca66;
+  font-size: 2.6rem;
+  width: 140px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 8px;
+  box-sizing: border-box;
+  margin-left: -24px;
+}
+
+/* line 230, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory {
+  background: url("../img/cat/catbg.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 562px;
+  overflow: hidden;
+}
+
+/* line 235, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+/* line 239, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--1 {
+  width: 180px;
+  height: 202px;
+  background-color: rgba(171, 237, 233, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  left: -101px;
+  top: 300px;
+}
+
+/* line 247, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--2 {
+  width: 180px;
+  height: 202px;
+  background-color: rgba(171, 237, 233, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  left: 60px;
+  top: 250px;
+  box-sizing: border-box;
+}
+
+/* line 257, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--2::after {
+  position: absolute;
+  z-index: 1;
+  background: url("../img/cat/t.png") no-repeat;
+  content: '';
+  width: 115px;
+  height: 115px;
+  left: 35px;
+  top: 40px;
+}
+
+/* line 266, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--3 {
+  width: 180px;
+  height: 202px;
+  background-color: rgba(171, 237, 233, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  left: 210px;
+  top: 300px;
+  box-sizing: border-box;
+}
+
+/* line 276, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--3::after {
+  position: absolute;
+  z-index: 1;
+  background: url("../img/cat/shoes.png") no-repeat;
+  content: '';
+  width: 115px;
+  height: 115px;
+  left: 35px;
+  top: 60px;
+}
+
+/* line 285, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--4 {
+  width: 180px;
+  height: 202px;
+  background-color: rgba(171, 237, 233, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  left: 360px;
+  top: 250px;
+  box-sizing: border-box;
+}
+
+/* line 295, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--4::after {
+  position: absolute;
+  z-index: 1;
+  background: url("../img/cat/t.png") no-repeat;
+  content: '';
+  width: 115px;
+  height: 115px;
+  left: 35px;
+  top: 40px;
+}
+
+/* line 304, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--5 {
+  width: 180px;
+  height: 202px;
+  background-color: rgba(171, 237, 233, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  left: 510px;
+  top: 300px;
+  box-sizing: border-box;
+}
+
+/* line 314, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--5::after {
+  position: absolute;
+  z-index: 1;
+  background: url("../img/cat/j.png") no-repeat;
+  content: '';
+  width: 115px;
+  height: 115px;
+  left: 60px;
+  top: 45px;
+}
+
+/* line 323, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--6 {
+  width: 180px;
+  height: 202px;
+  background-color: rgba(171, 237, 233, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  left: 660px;
+  top: 250px;
+  box-sizing: border-box;
+}
+
+/* line 333, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--6::after {
+  position: absolute;
+  z-index: 1;
+  background: url("../img/cat/t.png") no-repeat;
+  content: '';
+  width: 115px;
+  height: 115px;
+  left: 35px;
+  top: 40px;
+}
+
+/* line 342, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--7 {
+  width: 180px;
+  height: 202px;
+  background-color: rgba(171, 237, 233, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  left: 810px;
+  top: 300px;
+  box-sizing: border-box;
+}
+
+/* line 352, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--7::after {
+  position: absolute;
+  z-index: 1;
+  background: url("../img/cat/j.png") no-repeat;
+  content: '';
+  width: 115px;
+  height: 115px;
+  left: 60px;
+  top: 45px;
+}
+
+/* line 361, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--8 {
+  width: 180px;
+  height: 202px;
+  background-color: rgba(171, 237, 233, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  left: 960px;
+  top: 250px;
+  box-sizing: border-box;
+}
+
+/* line 371, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--8::after {
+  position: absolute;
+  z-index: 1;
+  background: url("../img/cat/shoes.png") no-repeat;
+  content: '';
+  width: 115px;
+  height: 115px;
+  left: 35px;
+  top: 60px;
+}
+
+/* line 380, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.catigory__items--9 {
+  width: 180px;
+  height: 202px;
+  background-color: rgba(171, 237, 233, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  right: -70px;
+  top: 300px;
+  box-sizing: border-box;
+}
+
+/* line 393, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* line 396, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 401, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info::after {
+  position: absolute;
+  background: url("../img/levis/levis.jpg") no-repeat;
+  width: 380px;
+  height: 175px;
+  top: -16px;
+  left: 14px;
+  z-index: 1;
+  content: '';
+}
+
+/* line 410, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info--l {
+  position: absolute;
+  top: -16px;
+  left: 360px;
+}
+
+/* line 414, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info--r {
+  position: absolute;
+  top: -16px;
+}
+
+/* line 417, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info__text {
+  width: 520px;
+  height: 500px;
+  padding: 200px 10px 0 50px;
+  box-sizing: border-box;
+}
+
+/* line 422, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info__text p {
+  font-size: 5rem;
+  font-family: HelveticaBold;
+  text-transform: capitalize;
+}
+
+/* line 426, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info__text--l {
+  font-size: 1.4rem;
+  font-family: HelveticaUltraLight;
+}
+
+/* line 429, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info__text__price {
+  font-size: 3.4rem;
+  font-family: HelveticaRegular;
+  padding-top: 50px;
+}
+
+/* line 433, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info__text__price a {
+  font-size: 2.5rem;
+  background-color: #cf1a2b;
+  color: #fff;
+  padding: 10px 5px;
+  margin-left: 90px;
+}
+
+/* line 439, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__info__text__price span {
+  font-family: HelveticaBold;
+}
+
+/* line 441, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+/* line 446, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__items--1 {
+  border: 1px solid black;
+}
+
+/* line 448, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.levis__items--1:hover {
+  border: 1px solid grey;
+}
+
+/* line 450, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+footer {
+  background-color: #1b2330;
+}
+
+/* line 452, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.footer {
+  dispaly: flex;
+  justify-content: space-between;
+}
+
+/* line 456, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.footer__icons img {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+/* line 459, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.subtitle {
+  font-size: 1rem;
+  font-family: HelveticaRegular;
+}
+
+/* line 462, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/main.sass */
+.footer__h {
+  width: 500px;
+}
+
+/*# sourceMappingURL=../css/main.map */

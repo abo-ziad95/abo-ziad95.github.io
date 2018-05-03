@@ -1,0 +1,519 @@
+@font-face {
+  font-family: "DroidSerifBold";
+  src: url("../fonts/DroidSerifBold/DroidSerifBold.eot");
+  src: url("../fonts/DroidSerifBold/DroidSerifBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSerifBold/DroidSerifBold.woff") format("woff"), url("../fonts/DroidSerifBold/DroidSerifBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/grid.sass */
+.conteiner {
+  width: 1305px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* line 5, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/grid.sass */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 1, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/reset.sass */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/reset.sass */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/reset.sass */
+body {
+  line-height: 1;
+}
+
+/* line 29, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/reset.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/reset.sass */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 43, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/reset.sass */
+a {
+  text-decoration: none;
+}
+
+/***********************MEDIA QUERIES***********************/
+/***********************COLORS & FONTS***********************/
+/* line 5, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+html {
+  font-size: 10px;
+}
+
+/* line 9, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.btn {
+  border: 1px solid #ad7835;
+  color: #ad7835;
+  padding: 10px 30px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  transition: all 2s;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 19, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.btn:hover {
+  color: #373737;
+  background-color: #ad7835;
+}
+
+/* line 22, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.btn::before {
+  content: '';
+  width: 0;
+  transition: all .4s;
+  height: 100%;
+  z-index: -1;
+  background-color: #ad7835;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+
+/* line 32, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.btn:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* line 41, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+body {
+  background: url("../img/bg/bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 4600px;
+}
+
+/* line 46, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.header__title {
+  width: 970px;
+  height: 482px;
+  border: 10px solid #ad7835;
+  border-right: none;
+  border-bottom: none;
+  margin-top: 173px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-size: cover;
+}
+
+/* line 57, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.header__title::after, .header__title::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 77%;
+  background-color: #ad7835;
+}
+
+/* line 63, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.header__title::after {
+  width: 30vw;
+  height: 10px;
+  bottom: 0;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+/* line 69, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.header__title::before {
+  right: 0;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+/* line 73, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.header__title__sup {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 75px;
+}
+
+/* line 80, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.header__title__sup div {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  margin: 10px auto 0 auto;
+}
+
+/* line 85, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.header__title--text {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18rem;
+  font-family: DroidSerifBold;
+  margin-top: 30px;
+}
+
+/* line 92, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.header__title__sub {
+  color: #ad7835;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* line 102, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.about {
+  margin-top: 200px;
+}
+
+/* line 104, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.about__layout {
+  width: 1300px;
+  height: 500px;
+  background-color: #373737;
+  display: flex;
+  position: relative;
+}
+
+/* line 110, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: #ad7835;
+  margin: 10px auto 0 0;
+}
+
+/* line 115, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.about__content {
+  width: 45%;
+  margin-left: 5%;
+}
+
+/* line 118, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.about__content p {
+  font-size: 6rem;
+  text-transform: capitalize;
+  color: #ad7835;
+  font-family: DroidSerifBold;
+  margin: 50px auto 0 auto;
+}
+
+/* line 124, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.about__content__text {
+  margin-top: 50px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+}
+
+/* line 130, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.about__content__text--span {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* line 133, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.about__img {
+  margin-top: -140px;
+}
+
+/* line 138, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.line {
+  margin: 10px 350px 50px 0;
+}
+
+/* line 140, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.s {
+  margin-top: 50px;
+}
+
+/* line 142, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article {
+  margin-top: 200px;
+}
+
+/* line 144, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___layout {
+  width: 1300px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 150, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___layout h1 {
+  color: #ad7835;
+  text-align: center;
+  font-size: 6rem;
+  margin-top: 50px;
+  font-family: DroidSerifBold;
+}
+
+/* line 156, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 159, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___list__item {
+  width: 30%;
+}
+
+/* line 161, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___list__item__img {
+  position: relative;
+  margin-left: 48px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* line 166, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___list__item__img::before {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  content: '';
+  background-color: #373737;
+  left: -48px;
+  top: -30px;
+}
+
+/* line 175, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___list__item p {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  color: #ad7835;
+  border-bottom: 1px solid #ad7835;
+  font-family: DroidSerifBold;
+}
+
+/* line 183, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___list__item__text {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: DroidSerifBold;
+  margin-bottom: 30px;
+}
+
+/* line 189, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___list__item a {
+  color: #ad7835;
+  font-size: 2rem;
+  position: relative;
+}
+
+/* line 193, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.article___list__item a::after {
+  position: absolute;
+  background: url("../img/articles/right.png") no-repeat;
+  content: '';
+  width: 20px;
+  height: 20px;
+  right: -40px;
+  top: 7px;
+}
+
+/* line 204, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.line {
+  margin: 10px 0px 30px 0;
+}
+
+/* line 206, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.span {
+  margin-right: 450px;
+}
+
+/* line 208, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery {
+  margin-top: 150px;
+}
+
+/* line 210, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery__text {
+  color: #ad7835;
+  font-size: 6rem;
+  font-family: DroidSerifBold;
+  margin-left: 30px;
+}
+
+/* line 215, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relatve;
+}
+
+/* line 220, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery__item--1 {
+  margin-top: 50px;
+  margin-right: 2px;
+  margin-left: 73px;
+}
+
+/* line 224, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery__item--4 {
+  margin-right: 2px;
+}
+
+/* line 226, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery__item--5 {
+  margin-top: -47px;
+}
+
+/* line 228, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery__item--2 {
+  margin-right: 2px;
+}
+
+/* line 230, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery__item--3 {
+  margin-top: 146px;
+}
+
+/* line 232, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery__item--6 {
+  margin-top: -256px;
+  margin-right: 2px;
+}
+
+/* line 235, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.galery__item--7 {
+  margin-top: -256px;
+}
+
+/* line 237, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.btn-c {
+  margin: 50px 0 0 550px;
+  display: inline-block;
+}
+
+/* line 243, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.btn-m {
+  margin: 50px 0px 0 0;
+  display: inline-block;
+}
+
+/* line 246, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.contact {
+  margin-top: 200px;
+}
+
+/* line 248, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.contact__layout {
+  width: 1300px;
+  height: 500px;
+  background-color: #373737;
+  display: flex;
+  position: relative;
+}
+
+/* line 254, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.contact__layout h1 {
+  font-size: 6rem;
+  font-family: DroidSerifBold;
+  margin-top: 50px;
+  color: #ad7835;
+}
+
+/* line 259, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.contact__img {
+  margin-top: -160px;
+}
+
+/* line 262, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.contact__form input, .contact__form textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid grey;
+  padding: 10px 5px;
+  outline: none;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 20px;
+  margin-bottom: 35px;
+}
+
+/* line 272, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+.contact__form input:focus, .contact__form textarea:focus {
+  border-bottom: 1px solid #ad7835;
+}
+
+/* line 277, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+footer {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 281, C:/Users/ammar/Desktop/front-end/pilumnus/sass/main.sass */
+footer a {
+  display: inline-block;
+  border: 1px solid #ad7835;
+  padding: 10px;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=../css/main.map */

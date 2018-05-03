@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/_base/fonts.css",
+	"sources": [
+		"../../sass/_base/fonts.sass"
+	],
+	"sourcesContent": [
+		"@font-face {\n\tfont-family: \"SegoeUIRegular\";\n\tsrc: url(\"../fonts/SegoeUIRegular/SegoeUIRegular.eot\");\n\tsrc: url(\"../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix\")format(\"embedded-opentype\"),\n\turl(\"../fonts/SegoeUIRegular/SegoeUIRegular.woff\") format(\"woff\"),\n\turl(\"../fonts/SegoeUIRegular/SegoeUIRegular.ttf\") format(\"truetype\") {}\n\tfont-style: normal;\n\tfont-weight: normal; }\n"
+	],
+	"mappings": "AAAA,UAAU;EACT,WAAW,EAAE,gBAAiB;EAC9B,GAAG,EAAE,iDAAG;EACR,GAAG,EAAE,wDAAG,CAAqD,2BAAM,EACnE,kDAAG,CAAgD,cAAM,EACzD,iDAAG,CAA+C,kBAAM;EACxD,UAAU,EAAE,MAAO;EACnB,WAAW,EAAE,MAAO",
+	"names": []
+}

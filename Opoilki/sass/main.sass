@@ -1,0 +1,301 @@
+@import "_base/fonts"
+@import "_base/grid"
+@import "_base/reset"
+@import "_base/variables"
+*
+  box-sizing: border-box
+html
+  font-size: 10px
+// //////////////////////////////////////
+              BLOCKS
+// //////////////////////////////////////
+// //////////////////////////////////////
+              NAV
+// //////////////////////////////////////
+.nav
+  background: $main-gradient
+  &__logo
+    margin: 30px 50px 30px 0
+    max-width: 200px
+  &__menu
+    width: 800px
+    &__list
+      display: flex
+      justify-content: space-around
+      align-items: center
+      height: 100%
+      flex-direction: row
+      font-family: $font
+      font-size: 1.8rem
+      &--item
+        @media #{$sm}
+          margin: 10px 0
+        a
+          color: $font-color
+          @media #{$sm}
+            color: $font-color
+            font-size: 1.9rem
+            font-family: $font
+      @media #{$sm}
+        display: none
+        margin-top: 97px
+        position: absolute
+        width: 100%
+        height: 180px
+        margin-left: -242px
+        text-align: center
+        z-index: 100
+        background-color: rgba(191, 0, 255, 0.8)
+    &__humburger
+      display: none
+      width: 50px
+      cursor: pointer
+      height: 40px
+      position: relative
+      background-color: #fff
+      margin: 20px 30px 20px 0px
+      float: right
+      border-radius: 5px
+      span
+        width: 30px
+        height: 7px
+        display: block
+        position: absolute
+        left: 10px
+        background-color: black
+        border-radius: 3px
+        transform: rotate(0deg)
+        transition: .3s ease-in-out
+        &:nth-child(1)
+          top: 4px
+        &:nth-child(2)
+          top: 16px
+        &:nth-child(3)
+          top: 28px
+      &__open
+        span
+          &:nth-child(1)
+            transform: rotate(45deg)
+            top: 16px
+          &:nth-child(2)
+            width: 0
+          &:nth-child(3)
+            transform: rotate(-45deg)
+            top: 16px
+      @media #{$sm}
+        display: inline-block
+        z-index: 100
+// //////////////////////////////////////
+              HEADER
+// //////////////////////////////////////
+.active
+  background-color: #fff
+.header
+  &__slider
+    &__content
+      position: absolute
+      top: 8vw
+      left: 0
+      color: $font-color
+      text-align: center
+      width: 100%
+      height: 100%
+      font-family: $font
+      &__title
+        font-size: 6.4rem
+        margin-top: 10vw
+        @media #{$sm}
+          font-size: 5rem
+          margin-top: 10vw
+        @media #{$xs}
+          font-size: 3rem
+          margin-top: 20vw
+      &__subtitle
+        margin-top: 4vw
+        font-size: 3.5rem
+        @media #{$sm}
+          font-size: 2rem
+        @media #{$xs}
+          font-size: 1.8rem
+      &__btn
+        margin-top: 6.5vw
+        a
+          text-transform: uppercase
+          border: 1px solid #fff
+          color: $font-color
+          border-radius: 20px
+          padding: 10px 20px
+          font-size: 1.5rem
+          margin-left: 2%
+          margin-right: 2%
+          @media #{$sm}
+            font-size: 1.3rem
+          @media #{$xs}
+            font-size: 1rem
+      &__slide
+        margin-top: 8vw
+        a
+          border: 1px solid $font-color
+          width: 20px
+          height: 20px
+          display: inline-block
+          border-radius: 100%
+          margin: 0 5px
+// //////////////////////////////////////
+              ABOUT
+// //////////////////////////////////////
+.about
+  width: 100%
+  height: 35vw
+  display: flex
+  @media #{$xs}
+    flex-direction: column
+    height: 100vw
+  &__img
+    background: url('../img/about/aboutPhoto.jpg') no-repeat
+    background-size: cover
+    width: 50%
+    @media #{$xs}
+      width: 100%
+      height: 50%
+  &__info
+    width: 50%
+    height: 100%
+    font-family: $font
+    color: black
+    font-weight: 900
+    padding: 5%
+    @media #{$xs}
+      height: 50%
+      padding: 10% 5%
+      text-align: center
+      width: 100%
+    &__title
+      font-size: 5rem
+      text-transform: uppercase
+      margin-bottom: 3%
+      @media #{$sm}
+        font-size: 3.5rem
+      @media #{$xs}
+        font-size: 2.8rem
+    &__subtitle
+      font-size: 3rem
+      @media #{$sm}
+        font-size: 1.8rem
+      @media #{$xs}
+        font-size: 1.8rem
+    &__btn
+      margin-top: 10%
+      margin-left: -2%
+      a
+        text-transform: uppercase
+        border: 1px solid transparent
+        color: $font-color
+        border-radius: 20px
+        padding: 10px 20px
+        font-size: 1.5rem
+        margin-left: 2%
+        margin-right: 2%
+        background-color: $btn-color
+        @media #{$sm}
+          font-size: 1.3rem
+        @media #{$xs}
+          font-size: 1rem
+// //////////////////////////////////////
+              OUR
+// //////////////////////////////////////
+.our
+  width: 100%
+  height: 50vh
+  text-align: center
+  color: $font-color
+  font-family: $font
+  position: relative
+  background-image: url(../img/our/our.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  display: flex
+  align-items: center
+  justify-content: center
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    background: $main-gradient
+    opacity: .3
+    width: 100%
+    height: 100%
+  &__content
+    font-size: 4rem
+    z-index: 10
+    position: relative
+    &::after
+      content: '\2dd'
+      width: 10px
+      height: 10px
+      position: absolute
+      top: -10px
+      left: 4px
+      color: $font
+    &::before
+      content: '\2dd'
+      width: 10px
+      height: 10px
+      position: absolute
+      bottom: -10px
+      right: 4px
+      color: $font
+    @media #{$sm}
+      font-size: 2.5rem
+// //////////////////////////////////////
+              OUR
+// //////////////////////////////////////
+.social
+  width: 100%
+  margin: 100px 0
+  height: 75vh
+  display: flex
+  justify-content: space-around
+  @media #{$sm}
+    flex-direction: column
+    height: 100vh
+  &__relation
+    width: 45%
+    height: 100%
+    position: relative
+    @media #{$sm}
+      width: 100%
+      margin-bottom: 50px
+    &__video
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border: none
+      @media #{$sm}
+        width: 100%
+        margin: auto
+  &__map
+    width: 45%
+    height: 100%
+    @media #{$sm}
+      width: 100%
+      margin: auto
+// //////////////////////////////////////
+              FOOTER
+// //////////////////////////////////////
+footer
+  width: 100%
+  background-color: black
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-
+  font-size: 3rem
+  height: 150px
+  h1
+    color: #fff
+    font-family: $font

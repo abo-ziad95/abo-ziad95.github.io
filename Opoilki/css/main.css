@@ -1,0 +1,598 @@
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/grid.sass */
+.conteiner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 4, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/grid.sass */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 1, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/reset.sass */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/reset.sass */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/reset.sass */
+body {
+  line-height: 1;
+}
+
+/* line 29, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/reset.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/reset.sass */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 43, C:/Users/ammar/Desktop/front-end/Opoilki/sass/_base/reset.sass */
+a {
+  text-decoration: none;
+}
+
+/***********************MEDIA QUERIES***********************/
+/***********************COLORS & FONTS***********************/
+/* line 5, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+html {
+  font-size: 10px;
+}
+
+/* line 15, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav {
+  background: linear-gradient(to right, #d318ce, #3a39ad);
+}
+
+/* line 17, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__logo {
+  margin: 30px 50px 30px 0;
+  max-width: 200px;
+}
+
+/* line 20, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu {
+  width: 800px;
+}
+
+/* line 22, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+  font-family: SegoeUIRegular, sans-serif;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 800px) {
+  /* line 30, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .nav__menu__list--item {
+    margin: 10px 0;
+  }
+}
+
+/* line 33, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__list--item a {
+  color: #e1e1e1;
+}
+
+@media (max-width: 800px) {
+  /* line 33, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .nav__menu__list--item a {
+    color: #e1e1e1;
+    font-size: 1.9rem;
+    font-family: SegoeUIRegular, sans-serif;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 22, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .nav__menu__list {
+    display: none;
+    margin-top: 97px;
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    margin-left: -242px;
+    text-align: center;
+    z-index: 100;
+    background-color: rgba(191, 0, 255, 0.8);
+  }
+}
+
+/* line 49, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__humburger {
+  display: none;
+  width: 50px;
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  background-color: #fff;
+  margin: 20px 30px 20px 0px;
+  float: right;
+  border-radius: 5px;
+}
+
+/* line 59, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__humburger span {
+  width: 30px;
+  height: 7px;
+  display: block;
+  position: absolute;
+  left: 10px;
+  background-color: black;
+  border-radius: 3px;
+  transform: rotate(0deg);
+  transition: .3s ease-in-out;
+}
+
+/* line 69, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__humburger span:nth-child(1) {
+  top: 4px;
+}
+
+/* line 71, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__humburger span:nth-child(2) {
+  top: 16px;
+}
+
+/* line 73, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__humburger span:nth-child(3) {
+  top: 28px;
+}
+
+/* line 77, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__humburger__open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 16px;
+}
+
+/* line 80, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__humburger__open span:nth-child(2) {
+  width: 0;
+}
+
+/* line 82, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.nav__menu__humburger__open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 16px;
+}
+
+@media (max-width: 800px) {
+  /* line 49, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .nav__menu__humburger {
+    display: inline-block;
+    z-index: 100;
+  }
+}
+
+/* line 91, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.active {
+  background-color: #fff;
+}
+
+/* line 95, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.header__slider__content {
+  position: absolute;
+  top: 8vw;
+  left: 0;
+  color: #e1e1e1;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-family: SegoeUIRegular, sans-serif;
+}
+
+/* line 104, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.header__slider__content__title {
+  font-size: 6.4rem;
+  margin-top: 10vw;
+}
+
+@media (max-width: 800px) {
+  /* line 104, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .header__slider__content__title {
+    font-size: 5rem;
+    margin-top: 10vw;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 104, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .header__slider__content__title {
+    font-size: 3rem;
+    margin-top: 20vw;
+  }
+}
+
+/* line 113, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.header__slider__content__subtitle {
+  margin-top: 4vw;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 800px) {
+  /* line 113, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .header__slider__content__subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 113, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .header__slider__content__subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* line 120, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.header__slider__content__btn {
+  margin-top: 6.5vw;
+}
+
+/* line 122, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.header__slider__content__btn a {
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  color: #e1e1e1;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+@media (max-width: 800px) {
+  /* line 122, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .header__slider__content__btn a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 122, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .header__slider__content__btn a {
+    font-size: 1rem;
+  }
+}
+
+/* line 135, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.header__slider__content__slide {
+  margin-top: 8vw;
+}
+
+/* line 137, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.header__slider__content__slide a {
+  border: 1px solid #e1e1e1;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 100%;
+  margin: 0 5px;
+}
+
+/* line 147, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.about {
+  width: 100%;
+  height: 35vw;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  /* line 147, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .about {
+    flex-direction: column;
+    height: 100vw;
+  }
+}
+
+/* line 154, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.about__img {
+  background: url("../img/about/aboutPhoto.jpg") no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  /* line 154, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .about__img {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+/* line 161, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.about__info {
+  width: 50%;
+  height: 100%;
+  font-family: SegoeUIRegular, sans-serif;
+  color: black;
+  font-weight: 900;
+  padding: 5%;
+}
+
+@media (max-width: 600px) {
+  /* line 161, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .about__info {
+    height: 50%;
+    padding: 10% 5%;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* line 173, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.about__info__title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+
+@media (max-width: 800px) {
+  /* line 173, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .about__info__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 173, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .about__info__title {
+    font-size: 2.8rem;
+  }
+}
+
+/* line 181, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.about__info__subtitle {
+  font-size: 3rem;
+}
+
+@media (max-width: 800px) {
+  /* line 181, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .about__info__subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 181, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .about__info__subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* line 187, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.about__info__btn {
+  margin-top: 10%;
+  margin-left: -2%;
+}
+
+/* line 190, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.about__info__btn a {
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  color: #e1e1e1;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #f211d5;
+}
+
+@media (max-width: 800px) {
+  /* line 190, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .about__info__btn a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 190, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .about__info__btn a {
+    font-size: 1rem;
+  }
+}
+
+/* line 207, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.our {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  color: #e1e1e1;
+  font-family: SegoeUIRegular, sans-serif;
+  position: relative;
+  background-image: url(../img/our/our.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 221, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.our::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #d318ce, #3a39ad);
+  opacity: .3;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 230, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.our__content {
+  font-size: 4rem;
+  z-index: 10;
+  position: relative;
+}
+
+/* line 234, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.our__content::after {
+  content: '\2dd';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -10px;
+  left: 4px;
+  color: SegoeUIRegular, sans-serif;
+}
+
+/* line 242, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.our__content::before {
+  content: '\2dd';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -10px;
+  right: 4px;
+  color: SegoeUIRegular, sans-serif;
+}
+
+@media (max-width: 800px) {
+  /* line 230, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .our__content {
+    font-size: 2.5rem;
+  }
+}
+
+/* line 255, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.social {
+  width: 100%;
+  margin: 100px 0;
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  /* line 255, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .social {
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
+/* line 264, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.social__relation {
+  width: 45%;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  /* line 264, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .social__relation {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+/* line 271, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.social__relation__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  /* line 271, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .social__relation__video {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* line 281, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+.social__map {
+  width: 45%;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  /* line 281, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+  .social__map {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* line 290, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  height: 150px;
+}
+
+/* line 299, C:/Users/ammar/Desktop/front-end/Opoilki/sass/main.sass */
+footer h1 {
+  color: #fff;
+  font-family: SegoeUIRegular, sans-serif;
+}
+
+/*# sourceMappingURL=../css/main.map */

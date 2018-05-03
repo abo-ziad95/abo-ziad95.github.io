@@ -1,0 +1,14 @@
+/* line 1, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/grid.sass */
+.conteiner {
+  width: 1305px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* line 5, C:/Users/ammar/Desktop/front-end/pilumnus/sass/_base/grid.sass */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=../../css/_base/grid.map */

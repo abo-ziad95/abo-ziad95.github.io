@@ -1,0 +1,285 @@
+@import "_base/fonts"
+@import "_base/grid"
+@import "_base/reset"
+@import "_base/variables"
+*
+  box-sizing: border-box
+html
+  font-size: 10px
+.btn
+  border: 1px solid $p-color
+  color: $p-color
+  padding: 10px 30px
+  font-size: 1.6rem
+  text-transform: uppercase
+  font-family: 'Raleway', sans-serif
+  transition: all 2s
+  position: relative
+  z-index: 1
+  &:hover
+    color: #373737
+    background-color: $p-color
+  &::before
+    content: ''
+    width: 0
+    transition: all .4s
+    height: 100%
+    z-index: -1
+    background-color: $p-color
+    left: 50%
+    top: 0
+    position: absolute
+  &:hover::before
+    width: 100%
+    left: 0
+// //////////////////////////////////////
+              BLOCKS
+// //////////////////////////////////////
+// //////////////////////////////////////
+              HEADR
+// //////////////////////////////////////
+body
+  background: url('../img/bg/bg.jpg') no-repeat
+  background-size: cover
+  background-position: center
+  height: 4600px
+.header__title
+  width: 970px
+  height: 482px
+  border: 10px solid #ad7835
+  border-right: none
+  border-bottom: none
+  margin-top: 173px
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  background-size: cover
+  &::after, &::before
+    content: ''
+    position: absolute
+    width: 10px
+    height: 77%
+    background-color: #ad7835
+  &::after
+    width: 30vw
+    height: 10px
+    bottom: 0
+    border-top-right-radius: 100%
+    border-bottom-right-radius: 100%
+  &::before
+    right: 0
+    border-bottom-left-radius: 100%
+    border-bottom-right-radius: 100%
+  &__sup
+    color: #fff
+    font-size: 2.4rem
+    font-family: 'Raleway', sans-serif
+    text-transform: uppercase
+    text-align: center
+    margin-top: 75px
+    div
+      width: 100px
+      height: 2px
+      background-color: #fff
+      margin: 10px auto 0 auto
+  &--text
+    color: #fff
+    text-align: center
+    text-transform: capitalize
+    font-size: 18rem
+    font-family: DroidSerifBold
+    margin-top: 30px
+  &__sub
+    color: $p-color
+    font-size: 2.5rem
+    font-family: 'Raleway', sans-serif
+    text-transform: uppercase
+    text-align: center
+    margin-top: 20px
+// //////////////////////////////////////
+              ABOUT
+// //////////////////////////////////////
+.about
+  margin-top: 200px
+  &__layout
+    width: 1300px
+    height: 500px
+    background-color: #373737
+    display: flex
+    position: relative
+.line
+  width: 100px
+  height: 2px
+  background-color: $p-color
+  margin: 10px auto 0 0
+.about__content
+  width: 45%
+  margin-left: 5%
+  p
+    font-size: 6rem
+    text-transform: capitalize
+    color: $p-color
+    font-family: DroidSerifBold
+    margin: 50px auto 0 auto
+  &__text
+    margin-top: 50px
+    color: #fff
+    font-size: 1.6rem
+    font-family: 'Raleway', sans-serif
+    line-height: 1.5
+    &--span
+      margin-top: 30px
+      margin-bottom: 50px
+.about__img
+  margin-top: -140px
+// //////////////////////////////////////
+              ARTICLE
+// //////////////////////////////////////
+.line
+  margin: 10px 350px 50px 0
+.s
+  margin-top: 50px
+.article
+  margin-top: 200px
+  &___layout
+    width: 1300px
+    height: 750px
+    display: flex
+    flex-direction: column
+    align-items: center
+    h1
+      color: $p-color
+      text-align: center
+      font-size: 6rem
+      margin-top: 50px
+      font-family: DroidSerifBold
+  &___list
+    display: flex
+    justify-content: space-between
+    &__item
+      width: 30%
+      &__img
+        position: relative
+        margin-left: 48px
+        box-sizing: border-box
+        z-index: 1
+      &__img::before
+        position: absolute
+        width: 100%
+        z-index: -1
+        height: 100%
+        content: ''
+        background-color: #373737
+        left: -48px
+        top: -30px
+      p
+        font-size: 2rem
+        margin-top: 20px
+        margin-bottom: 20px
+        padding-bottom: 10px
+        color: $p-color
+        border-bottom: 1px solid $p-color
+        font-family: DroidSerifBold
+      &__text
+        color: #fff
+        line-height: 1.5
+        font-size: 1.6rem
+        font-family: DroidSerifBold
+        margin-bottom: 30px
+      a
+        color: $p-color
+        font-size: 2rem
+        position: relative
+      a::after
+        position: absolute
+        background: url('../img/articles/right.png') no-repeat
+        content: ''
+        width: 20px
+        height: 20px
+        right: -40px
+        top: 7px
+// //////////////////////////////////////
+              GALERY
+// //////////////////////////////////////
+.line
+  margin: 10px 0px 30px 0
+.span
+  margin-right: 450px
+.galery
+  margin-top: 150px
+  &__text
+    color: $p-color
+    font-size: 6rem
+    font-family: DroidSerifBold
+    margin-left: 30px
+  &__item
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    position: relatve
+    &--1
+      margin-top: 50px
+      margin-right: 2px
+      margin-left: 73px
+    &--4
+      margin-right: 2px
+    &--5
+      margin-top: -47px
+    &--2
+      margin-right: 2px
+    &--3
+      margin-top: 146px
+    &--6
+      margin-top: -256px
+      margin-right: 2px
+    &--7
+      margin-top: -256px
+.btn-c
+  margin: 50px 0 0 550px
+  display: inline-block
+// //////////////////////////////////////
+              contact
+// ///////////////////////////////////
+.btn-m
+  margin: 50px 0px 0 0
+  display: inline-block
+.contact
+  margin-top: 200px
+  &__layout
+    width: 1300px
+    height: 500px
+    background-color: #373737
+    display: flex
+    position: relative
+    h1
+      font-size: 6rem
+      font-family: DroidSerifBold
+      margin-top: 50px
+      color: $p-color
+  &__img
+    margin-top: -160px
+  &__form
+    input, textarea
+      border: none
+      background-color: transparent
+      border-bottom: 1px solid grey
+      padding: 10px 5px
+      outline: none
+      font-size: 1.5rem
+      font-family: 'Raleway', sans-serif
+      margin-right: 20px
+      margin-bottom: 35px
+      &:focus
+        border-bottom: 1px solid $p-color
+// //////////////////////////////////////
+              footer
+// ///////////////////////////////////
+footer
+  margin-top: 200px
+  display: flex
+  justify-content: center
+  a
+    display: inline-block
+    border: 1px solid $p-color
+    padding: 10px
+    margin: 20px

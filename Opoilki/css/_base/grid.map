@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/_base/grid.css",
+	"sources": [
+		"../../sass/_base/grid.sass"
+	],
+	"sourcesContent": [
+		".conteiner {\n  max-width: 960px;\n  margin: 0 auto; }\n.row {\n  display: flex;\n  flex-direction: row; }\n\n$cols: 12;\n$gutter: 20px;\n@mixin col($num) {\n  width: calc( (((100% - (#{$gutter} * (#{$cols} - 1))) / #{$cols}) * #{$num}) + ( #{$gutter} * (#{$num} - 1)) ); }\n\n//\n// $cols: 12\n// $gutter: 40px\n// // $col: calc(100% / $cols)\n// // $col: 5.2%\n//\n// %container\n//   margin: 0 auto\n//   box-sizing: border-box\n//   display: flex\n//   @media #{$xxs}\n//     width: 100%\n//     padding: 0 15px\n//   @media #{$sm}\n//     width: 750px\n//   @media #{$md}\n//     width: 970px\n//   @media #{$lg}\n//     width: 1170px\n//\n//\n// =container($align:space-between, $wrap:wrap)\n//   @extend %container\n//   justify-content: $align\n//   flex-wrap: $wrap\n"
+	],
+	"mappings": ";AAAA,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,KAAM;EACjB,MAAM,EAAE,MAAO;CAAG;;;AACpB,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,GAAI;CAAG",
+	"names": []
+}

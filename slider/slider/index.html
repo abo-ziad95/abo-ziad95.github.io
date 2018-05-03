@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: #000;
+        }
+
+        .slider{
+            margin-top: 50px;
+        }
+        .slider__container{
+            width: 900px;
+            height: 400px;
+            margin: 0 auto 40px;
+            background-size: cover;
+            background-position: center;
+        }
+        .slider__controls{
+            text-align: center;
+        }
+        .slider__btn{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 2px solid red;
+            background-color: transparent;
+            box-sizing: border-box;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .slider__btn--active{
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <button id="openBtn">Click</button>
+    <div class="box"></div> -->
+
+    <div class="slider">
+        <div class="slider__container"></div>
+        <div class="slider__controls"></div>
+    </div>
+
+    <script src="../jquery.min.js"></script>
+    <script src="main_lesson.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/_base/grid.css",
+	"sources": [
+		"../../sass/_base/grid.sass"
+	],
+	"sourcesContent": [
+		".conteiner {\n  width: 1024px;\n  margin: 0 auto; }\n.row {\n  display: flex;\n  flex-direction: row; }\n"
+	],
+	"mappings": ";AAAA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,MAAO;EACd,MAAM,EAAE,MAAO;CAAG;;;AACpB,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,GAAI;CAAG",
+	"names": []
+}

@@ -1,0 +1,13 @@
+/* line 1, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/grid.sass */
+.conteiner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* line 4, C:/Users/ammar/Desktop/front-end/zebra tamplate/sass/_base/grid.sass */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=../../css/_base/grid.map */

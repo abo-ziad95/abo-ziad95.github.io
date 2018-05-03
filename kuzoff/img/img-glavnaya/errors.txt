@@ -1,0 +1,8 @@
+[2018-04-23 16:15:37] layer "+7 (___) ___ __ __": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-04-23 16:15:37] layer "+7 (___) ___ __ __": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-04-23 16:15:37] layer "+7 (___) ___ __ __": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-04-23 16:15:37] layer "+7 (___) ___ __ __": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-04-23 16:15:37] layer "+7 (495) 77-11-949 +7 (499) 350-77-35": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-04-23 16:15:36] layer "+7 (495) 77-11-949 +7 (499) 350-77-35": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-04-23 16:15:37] layer "Замена и окраска переднего бампера, передней поперечной балки, ": Expected end of input but "," found.
+[2018-04-23 16:15:36] layer "Стоимость включает в себя: снятие, установку, разборку, сборку,": Expected end of input but "," found.

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/_base/variables.css",
+	"sources": [
+		"../../sass/_base/variables.sass"
+	],
+	"sourcesContent": [
+		"/***********************MEDIA QUERIES***********************/\n// $media-xlg: 1500px\n// $media-lg: 1239px\n// $media-md: 960px\n// $media-sm: 767px\n// $media-xs: 480px\n// $media-xxs: 320px\n\n$sm: \"(max-width: 800px)\";\n$xs: \"(max-width: 600px)\";\n/***********************COLORS & FONTS***********************/\n$font: SegoeUIRegular , sans-serif;\n$font-color: #e1e1e1;\n$font-color-Dark: #242424;\n$btn-color: #f211d5;\n$main-gradient: linear-gradient(to right, #d318ce, #3a39ad);\n"
+	],
+	"mappings": "AAAA,6DAA6D;AAU7D,8DAA8D",
+	"names": []
+}

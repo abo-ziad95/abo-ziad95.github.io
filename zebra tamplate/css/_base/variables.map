@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/_base/variables.css",
+	"sources": [
+		"../../sass/_base/variables.sass"
+	],
+	"sourcesContent": [
+		"/***********************MEDIA QUERIES***********************/\n// $media-xlg: 1500px\n// $media-lg: 1239px\n// $media-md: 960px\n// $media-sm: 767px\n// $media-xs: 480px\n// $media-xxs: 320px\n\n/***********************COLORS & FONTS***********************/\n$main-font: \"Lato\", Helvetica, sans-serif;\n$font-color-dark: #4a4a4a;\n$bg-color-light: #f2f2f2;\n$main-gradient: linear-gradient(to top, #9b23ea, #5f72bd);\n$accent-gradient: linear-gradient(to left, #fe9a8b, #fd868c 41%, #f9748f 73%, #f78ca0);\n$main-color: #9B23EA;\n"
+	],
+	"mappings": "AAAA,6DAA6D;AAQ7D,8DAA8D",
+	"names": []
+}
