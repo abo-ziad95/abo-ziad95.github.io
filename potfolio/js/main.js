@@ -31,6 +31,14 @@ $(window).scroll(function() {
 	} 
 });
 $(document).ready(function(){
+	var val = 0
+	$('.header__text span').each(function(index){
+		var __self = this
+		setTimeout(function(){
+          $(__self).css({'display':'inline-block', 'color': 'rgb('+ val +',0, '+ val +')'})
+          	val += 5
+		}, 110 * index)
+	})
 		if($('.header').offset().top - $(window).scrollTop() === 0){
 		$('.home_l').addClass('nav__menu__list__link__active')
 	}

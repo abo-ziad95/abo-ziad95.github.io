@@ -7,6 +7,8 @@ var gulp = require('gulp'),
 		prefix = require('gulp-autoprefixer'),
 		imagemin = require('gulp-imagemin'),
 		browserSync = require('browser-sync').create();
+		
+var gcmq = require('gulp-group-css-media-queries');
 
 var useref = require('gulp-useref'),
 		gulpif = require('gulp-if'),
@@ -26,7 +28,11 @@ var paths = {
 /*********************************
 		Developer tasks
 *********************************/
-
+gulp.task('mediagrp', function () {
+    gulp.src('app/css/main.css')
+        .pipe(gcmq())
+        .pipe(gulp.dest('app/css/'));
+});
 //sass compile
 gulp.task('sass', function() {
 	return gulp.src(paths.blocks + '*.sass')

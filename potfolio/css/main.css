@@ -229,6 +229,9 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
+.header__text span{
+  display: none;
+}
 
 .about {
   width: 100vw;
