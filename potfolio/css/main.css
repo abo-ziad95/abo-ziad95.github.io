@@ -188,15 +188,11 @@ body {
 }
 
 .nav__menu__list__link {
-  color: #fff;
+  color: #fff ;
   font-size: 2.5rem;
   font-family: sans-serif;
   opacity: 1;
   text-transform: uppercase;
-}
-
-.nav__menu__list__link:hover {
-  color: #1aa3ff;
 }
 
 .nav__menu__list__link__active {
@@ -512,7 +508,6 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-
   .container {
     max-width: 540px;
   }
