@@ -31,7 +31,7 @@ $(window).scroll(function() {
 	} 
 });
 $(document).ready(function(){
-	var val = 0
+	 var val = 0
 	$('.header__text span').each(function(index){
 		var __self = this
 		setTimeout(function(){
