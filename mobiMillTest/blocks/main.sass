@@ -1,0 +1,427 @@
+//*********************************************
+//		Assets
+//*********************************************
+@import "_base/reset"
+// @import "_base/variables"
+@import "_base/fonts"
+@import "_base/grid"
+
+//*********************************************
+//		Blocks
+//*********************************************
+html, body
+  font-size: 10px
+  font-family: sans-serif
+  @media #{$m}
+    font-size: 7.5px
+  @media #{$s}
+    font-size: 6.5px
+  @media #{$xs}
+    font-size: 4.5px
+*
+  box-sizing: border-box
+.nav
+  width: 100vw
+  max-width: 100%
+  padding-top: 25px
+  background-color: #e8f3fb
+  @media #{$xs}
+    padding-top: 0px
+  &__info
+    margin-bottom: 25px
+    display: flex
+    justify-content: space-between
+    @media #{$xs}
+      margin-bottom: 10px
+    &__logo
+      +col(3)
+      @media #{$s}
+        +col(2)
+        margin-top: auto
+      @media #{$xs}
+        +col(2.5)
+      img
+        max-width: 100%
+        height: auto
+    &__phone
+      +col(3)
+      color: #000
+      text-align: left
+      font-size: 1.4rem
+      margin-top: auto
+      line-height: 1.2
+      @media #{$l}
+        +col(2)
+      @media #{$xs}
+        +col(3)
+      a
+        color: #0066b3
+        font-size: 1.6rem
+    &__links
+      +col(3)
+      font-size: 1.4rem
+      font-height: 1.6
+      color: #505050
+      text-align: left
+      margin-top: auto
+      margin-bottom: 3px
+      display: flex
+      justify-content: space-between
+      line-height: 1.6
+      @media #{$l}
+        +col(4)
+      @media #{$s}
+        +col(4.5)
+      @media #{$xs}
+        +col(5.3)
+      a
+        border-bottom: 1px solid #0066b3
+    &__select
+      +col(1)
+      margin-top: auto
+      margin-bottom: 3px
+      @media #{$xs}
+        margin-bottom: 2px
+        +col(2)
+      select 
+        padding: 5px 30px 5px 5px
+        font-size: 1.3rem
+        border: 1px solid #0066b3
+        appearance: none
+        background: url(../img/drop-arrow.png) 85% / 15% no-repeat #fff
+        @media #{$m}
+          padding: 3px 20px 3px 3px
+        @media #{$s}
+          padding: 0px 10px 0px 2px
+    &__search
+      width: 35px
+      height: 30px
+      position: relative
+      margin-top: auto
+      margin-bottom: 3px
+      background-color: #0066b3
+      @media #{$s}
+        display: flex
+        width: 25px
+        height: 20px
+        margin-bottom: 0px
+      @media #{$xs}
+        display: none
+      a
+        display: block
+        width: 100%
+        height: 100%
+      img
+        max-width: 100%
+        position: absolute
+        top: 25%
+        left: 31%
+        height: auto
+        @media #{$s}
+          top: 15%
+          left: 21%
+  &__menu
+    display: flex
+    justify-content: space-around
+    +col(12)
+    &__item
+      background-color: #d8d8d8
+      +col(2)
+      border-right: 1px solid #e6e6e6
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      font-size: 1.6rem
+      @media #{$xs}
+        +col(3)
+        font-size: 1.4rem
+      &:hover
+        background-color: #e8f3fb
+      img
+        margin-left: 7px
+        @media #{$s}
+          display: none
+      &:last-child
+        border-right: none
+      a
+        width: 100%
+        color: #505050
+        padding: 25px 0
+        @media #{$s}
+          padding: 10px 0
+.header
+  width: 100vw
+  max-width: 100%
+  height: 80vh
+  background: url(../img/farm-field-with-hay-balls-1160-401@3x.jpg) 
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  display: flex
+  &__links
+    display: flex
+    width: 100%
+    justify-content: center
+    margin-top: auto
+    margin-bottom: 40px
+    @media #{$m}
+      margin-bottom: 20px
+    a
+      width: 20px
+      height: 20px
+      margin-right: 28px
+      background-color: #fff
+      content: ''
+      @media #{$m}
+        width: 10px
+        height: 10px
+.benefits
+  width: 100vw
+  max-width: 100%
+  background-color: #fff
+  padding: 90px 0
+  &__items
+    display: flex
+    justify-content: space-between
+    padding: 0 100px
+    @media #{$s}
+      padding: 0
+    &__item
+      width: 32%
+      padding: 30px 40px 40px 40px
+      box-shadow: 0 2px 4px 0 
+      border: 1px solid #e6e6e6
+      @media #{$xs}
+        padding: 15px
+      &__text
+        font-size: 1.6rem
+        color: #000
+        text-align: center
+        line-height: 1.4
+        @media #{$xs}
+          font-size: 1.9rem
+      img
+        max-width: 100%
+        margin-bottom: 27px
+.seed
+  width: 100vw
+  max-width: 100%
+  background-color: #fafafa
+  position: relative
+  &__title
+    padding: 17px 130px 16px 30px
+    background-color: #e6e6e6
+    display: inline-block
+    position: absolute
+    top: -28px
+    opacity: 0.3
+    font-size: 2rem
+    font-weight: bold
+    z-index: 1
+  &__info
+    width: 70%
+    @media #{$xs}
+      width: 100%
+    &__text
+      padding-top: 70px
+      color: #505050
+      font-size: 1.6rem
+      text-align: left
+      line-height: 1.5
+      padding-bottom: 50px
+    &__btn
+      background-color: #0066b3
+      margin-bottom: 38px
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      width: 170px
+      @media #{$xs}
+        width: 100%
+      a
+        color: #fff
+        font-weight: 600
+        font-size: 1.4rem
+        padding: 15px 0
+        width: 100%
+  &__images
+    width: 30%
+    position: relative
+    @media #{$xs}
+      display: none
+    &__image1
+      width: 90%
+      height: 300px
+      display: flex
+      position: absolute
+      top: -30px
+      right: 0px
+      @media #{$m}
+        height: 250px
+      @media #{$s}
+        height: 220px
+      img 
+        max-width: 100%
+        height: auto
+    &__image2
+      width: 30%
+      height: 100px
+      display: flex
+      position: absolute
+      bottom: 27px
+      left: 0px
+      @media #{$m}
+        height: 70px
+        bottom: 47px
+      img 
+        max-width: 100%
+        height: auto
+.country
+  width: 100vw
+  max-width: 100%
+  background-color: #fff
+  &__title
+    padding: 17px 130px 16px 30px
+    background-color: #e6e6e6
+    display: inline-block
+    opacity: 0.3
+    font-size: 2rem
+    font-weight: bold
+    margin-top: 80px
+    margin-bottom: 40px
+  &__items
+    display: flex
+    justify-content: space-between
+    padding: 0 100px 0 60px
+    @media #{$s}
+      padding: 0
+    &__item
+      width: 32%
+      padding: 30px 40px 40px 40px
+      box-shadow: 0 2px 4px 0 
+      border: 1px solid #e6e6e6
+      @media #{$xs}
+        padding: 15px
+      &__text
+        font-size: 1.6rem
+        color: #000
+        text-align: center
+        line-height: 1.4
+        @media #{$xs}
+          font-size: 1.9rem
+      img
+        max-width: 100%
+        margin-bottom: 27px
+.news
+  width: 100vw
+  max-width: 100%
+  background-color: #fafafa
+  padding-bottom: 50px
+  &__title
+    padding: 17px 130px 16px 30px
+    background-color: #e6e6e6
+    display: inline-block
+    opacity: 0.3
+    font-size: 2rem
+    font-weight: bold
+    margin-top: 80px
+    margin-bottom: 40px
+  &__items
+    display: flex
+    justify-content: space-between
+    &__item
+      width: 32%
+      position: relative
+      &__text
+        font-size: 2rem
+        color: #505050
+        text-align: left
+        line-height: 1.4
+        background-color: #cce0ef
+        padding: 20px
+        @media #{$xs}
+          font-size: 1.9rem
+      img
+        max-width: 100%
+        display: block
+      &__subtext
+        position: absolute
+        left: 10px
+        color: #fff
+        bottom: 85px
+        font-size: 1.4rem
+        text-align: center
+        padding: 5px 15px
+        display: inline-block
+        background-color: #0066b3
+        @media #{$l}
+          bottom: 115px
+        @media #{$m}
+          bottom: 95px
+        @media #{$s}
+          bottom: 105px
+        @media #{$s}
+          bottom: 100px
+.footer
+  width: 100vw
+  max-width: 100%
+  background-color: #fff
+  padding: 15px 0 70px 0
+  border-top: 1px solid #cce0ef
+  &__links
+    width: 70%
+  &__items
+    display: flex
+    justify-content: space-between
+    &__item
+      width: 32%
+      display: flex
+      flex-direction: column
+      font-size: 1.2rem
+      line-height: 1.7
+      &__title
+        color: #4a4a4a
+        font-weight: 600
+        &__phone
+          margin-top: auto
+      a 
+        display: block
+        color: #6c6c6c
+        font-weight: 300
+  &__info
+    line-height: 1.83 
+    text-align: left 
+    color: #505050 
+    font-size: 1.2rem
+  &__social
+    width: 30%
+    display: flex
+    flex-direction: column
+    &__sites
+      display: flex
+      margin-left: auto
+      justify-content: flex-end
+      &__img
+        width: 20%
+        margin-left: 15px
+        img
+          max-width: 100%
+          height: auto
+    &__download
+      display: flex
+      flex-direction: column
+      margin-left: auto
+      margin-top: auto
+      &__img
+        width: 40%
+        margin-left: auto
+        img
+          max-width: 100%
+          height: auto
+
+ 
+
+
+
