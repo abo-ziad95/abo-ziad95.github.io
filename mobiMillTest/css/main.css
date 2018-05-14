@@ -163,7 +163,6 @@ a {
 .container {
   margin: 0 auto;
   max-width: 1140px;
-  border: 1px solid black;
 }
 
 html,
@@ -741,7 +740,6 @@ body {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
-    border: 1px solid red;
   }
 
   .nav__info__phone {
@@ -762,7 +760,6 @@ body {
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
-    border: 1px solid green;
   }
 
   html,
@@ -800,7 +797,6 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
-    border: 1px solid black;
   }
 
   html,
@@ -870,7 +866,6 @@ body {
 @media (max-width: 576px) {
   .container {
     width: 100%;
-    border: 1px solid red;
     padding: 0 10px;
   }
 
