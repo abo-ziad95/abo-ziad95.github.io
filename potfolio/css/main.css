@@ -382,6 +382,13 @@ body {
   text-transform: uppercase;
 }
 
+.works__p {
+  font-size: 4rem;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .works__items {
   display: -webkit-box;
   display: -webkit-flex;
