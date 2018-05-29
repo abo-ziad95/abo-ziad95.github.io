@@ -44,7 +44,7 @@ $(document).ready(function(){
 	    return false; // выключаем стандартное действие
     });
 });
-$(window).ready(function(){
+$(window).on('load', function(){
 		 var val = 0
 	$('.header__text span').each(function(index){
 		var __self = this
