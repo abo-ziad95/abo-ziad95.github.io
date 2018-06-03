@@ -572,3 +572,38 @@ body {
     margin-bottom: 20px;
   }
 }
+.btn {
+  border: 1px solid black;
+  color: black;
+  padding: 10px 30px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  transition: all 2s;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+.btn::before {
+  content: '';
+  width: 0;
+  transition: all .4s;
+  height: 100%;
+  z-index: -1;
+  background-color: black;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+
+.btn:hover::before {
+  width: 100%;
+  left: 0;
+}
