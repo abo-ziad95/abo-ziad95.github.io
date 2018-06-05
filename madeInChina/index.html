@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Видео 1</title>
+  <meta charset="utf-8"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- build:css css/main.css-->
+  <link rel="stylesheet" href="css/main.css"/>
+  <!-- endbuild-->
+  <!-- build:css css/vendor.css-->
+  <link rel="stylesheet" href="libs/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="libs/popup/magnific-popup.css">
+  <!-- endbuild-->
+</head>
+<body>
+  <section class="line__top"></section>
+  <header class="haeder">
+   <div class="container">
+     <p class="header__title">
+      Смотри видео и узнай,
+    </p>
+    <div class="header__subtitle">
+     чего Ожидать от Мастер-Класса, <br>
+     а Также <span> Рассчитай Свою <br>
+     Прибыль</span> от Продажи ТОПовых Товаров <br>
+     в Калькуляторе Под Видео <br>
+   </div>
+   <div class="header__relation">
+    <iframe class="header__relation__video" src="https://www.youtube.com/embed/EMbX5wqjwJg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="header__locetion">
+   <span> <i class="far fa-calendar-alt"></i></span>
+   <div class="header__locetion__item">
+    <div class="header__locetion__title">
+     Дата
+   </div>
+   <div class="header__locetion__subtitle">
+     14.06.2018
+   </div>
+ </div>
+ <span><i class="far fa-clock"></i></span>
+ <div class="header__locetion__item">
+  <div class="header__locetion__title">
+    Время
+  </div>
+  <div class="header__locetion__subtitle">
+   20:00 МСК/Киев
+ </div>
+</div>
+<span><i class="fas fa-link"></i></span>
+<div class="header__locetion__item">
+  <div class="header__locetion__title">
+    Ссылка
+  </div>
+  <div class="header__locetion__subtitle">
+   <a href="#">Вход в мастер-класс</a>
+ </div>
+</div>
+</div>
+</div>
+</header>
+<section class="products">
+  <div class="container">
+    <div class="step-1"></div>
+    <div class="products__title">
+      Узнай, сколько ты смог бы зарабатывать, если заказать <br> партию товара из Китая и продать ее у себя в городе <br> или стране:
+    </div> 
+    <div class="products__items">
+      <div class="products__items__item">
+       <img src="img/0.jpg" alt="">  
+       <div class="products__items__item__title">  
+        JBL колонки ($10)
+      </div>
+    </div>
+    <div class="products__items__item">
+     <img src="img/1.jpg" alt="">  
+     <div class="products__items__item__title">  
+      Перчатка-антишерсть ($3)
+    </div>
+  </div>
+  <div class="products__items__item">
+   <img src="img/2.jpg" alt="">  
+   <div class="products__items__item__title">  
+    Фитнесс-браслет ($11)
+  </div>
+</div>
+<div class="products__items__item">
+ <img src="img/3.jpg" alt="">  
+ <div class="products__items__item__title">  
+  Рюкзак-антивор ($9)
+</div>
+</div>
+<div class="products__items__item">
+ <img src="img/4.jpg" alt="">  
+ <div class="products__items__item__title">  
+ 3D доска для рисования Magic Drawing Board ($6.5)
+</div>
+</div>
+<div class="products__items__item">
+ <img src="img/5.jpg" alt="">  
+ <div class="products__items__item__title">  
+  USB шейкер ($10,2)
+</div>
+</div>
+<div class="products__items__item">
+ <img src="img/6.jpg" alt="">  
+ <div class="products__items__item__title">  
+  Беспроводная bluetooth колонка CoolDog ($12)
+</div>
+</div>
+<div class="products__items__item">
+ <img src="img/7.jpg" alt="">  
+ <div class="products__items__item__title">  
+ Увлажнитель воздуха Mini Humidifier ($4,8)
+</div>
+</div>
+<div class="products__items__item">
+ <img src="img/8.webp" alt="">  
+ <div class="products__items__item__title">  
+  Фитнесс резинки ($2,69)
+</div>
+</div>
+<div class="products__items__item">
+ <img src="img/9.jpg" alt="">  
+ <div class="products__items__item__title">  
+  Коврик для мытья кистей (Makeup brush cleaners) ($0,72)
+</div>
+</div>
+</div>
+    <div class="products__title title__left">
+      ВЫБЕРИТЕ СТРАНУ ДЛЯ ПРОДАЖИ (ДОСТАВКА)
+    </div> 
+    <div class="products__country">
+         <select>
+          <option>Россия</option>
+          <option selected>Украина</option>
+          <option>Казахстан</option>
+        </select>
+    </div>
+    <div class="products__title title__left">
+     ВЫБЕРИТЕ СУММУ ВАШЕЙ ИНВЕСТИЦИИ
+    </div> 
+    <div class="products__range">
+      <input type="range" value="0" min="0" max="10000" list="steplist" class="products__range--input">
+    </div>
+    <div class="products__range__val">
+      <span  onclick="setVal(0)">0</span>
+      <span  onclick="setVal(1000)">1000</span>
+      <span  onclick="setVal(2000)">2000</span>
+      <span  onclick="setVal(3000)">3000</span>
+      <span  onclick="setVal(4000)">4000</span>
+      <span  onclick="setVal(5000)">5000</span>
+      <span  onclick="setVal(6000)">6000</span>
+      <span  onclick="setVal(7000)">7000</span>
+      <span  onclick="setVal(8000)">8000</span>
+      <span  onclick="setVal(9000)">9000</span>
+      <span  onclick="setVal(10000)">10000</span>
+    </div>
+    <div class="products__count">
+      <div class="products__count__item infesting">
+        <div class="products__count__item__title">Ваша инвестиция:</div>
+        <span id="infesting"></span><span>$</span>
+      </div>
+      <div class="products__count__item delevary">
+        <div class="products__count__item__title">Затраты на закупку и доставку товара:</div>
+        <span id="delevary"></span><span>$</span>
+      </div>
+      <div class="products__count__item marcating">
+        <div class="products__count__item__title">Затраты на рекламу:</div>
+        <span id="marcating"></span><span>$</span>
+      </div>
+      <div class="products__count__item salary">
+        <div class="products__count__item__title">Доход с продаж:</div>
+        <span id="salary"></span><span>$</span>
+      </div>
+    </div>
+    <div class="products__value">
+      <div class="products__value__title">
+        Чистая прибыль:
+      </div>
+      <div class="products__value__val">
+        <span id="val"></span><span>$</span>
+      </div>
+      <div class="products__value__subtext">Ваша чистая прибыль после продажи всей партии товара</div>  
+    </div>
+</div>
+</section>
+<section class="reminder">
+  <div class="container">
+    <div class="step-2"></div>
+    <div class="reminder__items">
+    <div class="reminder__img">
+      <img src="img/bon1.png" alt="">
+    </div>
+    <div class="reminder__text">
+      Кликните по синей кнопке, чтобы добавить напоминание в свой календарь о начале мастер-класса:
+    </div>
+    </div>
+    <div class="reminder__btn">
+      <a href="#">Добавить напоминание</a>
+    </div>
+  </div>
+</section>
+<section class="download">
+  <div class="container">
+    <div class="step-3"></div>
+    <div class="download__items">
+      <div class="download__text">
+        <div class="download__text__top">Скачайте и распечатайте
+этот бланк для записей
+во время мастер-класса.</div>
+        <div class="download__text__bottom">Он поможет упорядочить полученные
+знания.</div>
+      </div>
+      <div class="download__img">
+        <img src="img/bon2.png" alt="">
+      </div>
+    </div>
+        <div class="download__btn">
+      <a href="#">скачать бланк</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  
+</footer>
+<!-- build:js js/vendor.js-->
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/popup/jquery.magnific-popup.min.js"></script>
+<script src="libs/owl/owl.carousel.min.js"></script>
+<!-- endbuild-->
+<!-- build:js js/main.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
