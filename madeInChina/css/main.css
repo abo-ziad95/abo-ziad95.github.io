@@ -148,7 +148,7 @@ table {
   margin: 0 auto;
   background-color: #fff;
   max-width: 1140px;
-  border: 1px solid black;
+  padding-bottom: 30px;
 }
 /************************************************************/
 
@@ -354,7 +354,7 @@ body {
 }
 
 .step-1 {
-  background: url("../../img/step-1.png");
+  background: url("../img/step-1.png");
   background-color: #F4F8FF;
   background-position: left;
   -webkit-background-size: cover;
@@ -497,7 +497,7 @@ body {
 
 .products__value {
   width: 90%;
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
@@ -505,6 +505,7 @@ body {
   background: #eee;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  padding-bottom: 30px;
 }
 
 .products__value__title {
@@ -527,7 +528,7 @@ body {
 }
 
 .step-2 {
-  background: url("../../img/step-2.png");
+  background: url("../img/step-2.png");
   background-color: #F4F8FF;
   background-position: left;
   -webkit-background-size: cover;
@@ -535,11 +536,10 @@ body {
   background-repeat: no-repeat;
   min-height: 55px;
   margin-left: -20px;
-  margin: 50px 0 50px -20px;
 }
 
 .step-3 {
-  background: url("../../img/step-3.png");
+  background: url("../img/step-3.png");
   background-color: #F4F8FF;
   background-position: left;
   -webkit-background-size: cover;
@@ -547,7 +547,6 @@ body {
   background-repeat: no-repeat;
   min-height: 55px;
   margin-left: -20px;
-  margin: 50px 0 50px -20px;
 }
 
 .reminder {
@@ -561,14 +560,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  padding-top: 30px;
 }
 
 .reminder__img {
@@ -602,7 +601,6 @@ body {
 }
 
 .reminder__btn {
-  margin: 30px 0;
   width: 500px;
   background-color: #4960d2;
   text-align: center;
@@ -610,7 +608,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-family: Montserrat;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
@@ -632,9 +630,6 @@ body {
   border-radius: 10px;
 }
 
-.reminder__btn a:active {
-  margin-bottom: -10px;
-}
 
 .download {
   width: 100vw;
@@ -647,11 +642,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-bottom: 50px;
+  padding-top: 30px;
 }
 
 .download__img {
@@ -698,7 +693,6 @@ body {
 }
 
 .download__btn {
-  margin: 30px 0;
   width: 500px;
   background-color: #fc7321;
   text-align: center;
@@ -706,7 +700,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-family: Montserrat;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
@@ -727,21 +721,16 @@ body {
   border-radius: 10px;
 }
 
-.download__btn a:active {
-  margin-bottom: -10px;
-}
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
-    border: 1px solid red;
   }
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
-    border: 1px solid green;
   }
 
   .products__items__item {
@@ -752,7 +741,6 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
-    border: 1px solid black;
   }
 
   .header__locetion span {
@@ -805,6 +793,10 @@ body {
     width: 90%;
   }
 
+
+.products__range__val span:nth-child(even) {
+  display: none;
+}
   .title__left {
     margin-left: -20px;
   }
@@ -852,7 +844,6 @@ body {
 @media (max-width: 576px) {
   .container {
     width: 90%;
-    border: 1px solid red;
     padding: 0 10px;
     margin: 0 5%;
   }
@@ -900,4 +891,7 @@ body {
 .infesting span, .salary span{
   color: #6598FF;
   font-weight: bold;
+}
+.selected {
+  border: 3px solid blue;
 }

@@ -4,19 +4,37 @@ const delevary = document.querySelector('#delevary')
 const marcating = document.querySelector('#marcating')
 const salary = document.querySelector('#salary')
 const UIval = document.querySelector('#val')
+const items = document.querySelector('.products__items')
+const item = document.querySelectorAll('.products__items__item')
 
 range.addEventListener('input', getVal)
 
+items.addEventListener('click', function(e){
+	if(e.target.parentElement.classList.contains('products__items__item')){
+		item.forEach( function(item) {
+			item.classList.remove('selected')
+		});
+		e.target.parentElement.classList.add('selected')
+
+		scrollToCalc()
+
+	}
+
+})
 getInfesting ()
 
+function scrollToCalc(){
+	window.scrollTo(0 , range.offsetTop - 100)
+}
+
 function getVal(){
-  const value = range.value
-  getInfesting (value)
+	const value = range.value
+	getInfesting (value)
 }
 
 function setVal(val){
-  range.value = val
-  getVal()
+	range.value = val
+	getVal()
 }
 
 function getInfesting (val = 0) {
