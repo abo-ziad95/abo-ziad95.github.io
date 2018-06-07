@@ -24,7 +24,9 @@ items.addEventListener('click', function(e){
 getInfesting ()
 
 function scrollToCalc(){
-	window.scrollTo(0 , range.offsetTop - 100)
+	// window.scrollTo(0 , range.offsetTop - 100)
+	$('html, body').animate({ scrollTop: $('.products__country').offset().top }, 500); 
+
 }
 
 function getVal(){
