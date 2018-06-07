@@ -15,9 +15,13 @@ items.addEventListener('click', function(e){
 			item.classList.remove('selected')
 		});
 		e.target.parentElement.classList.add('selected')
-
 		scrollToCalc()
-
+	}else if(e.target.classList.contains('products__items__item')){
+				item.forEach( function(item) {
+			item.classList.remove('selected')
+		});
+		e.target.classList.add('selected')
+		scrollToCalc()
 	}
 
 })
