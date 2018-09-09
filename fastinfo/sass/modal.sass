@@ -1,0 +1,116 @@
+$fz14: 14px
+$fz16: 16px
+$fz18: 18px
+$fz20: 20px
+$c-fff: #fff
+$ffmon: 'Montserrat', sans-serif
+$ffmon-b: 'Montserrat-Bold', sans-serif
+$ffmer-b: 'Merriweather-Bold', serif
+$ffos: 'Open Sans', sans-serif
+$c-b18184: #b18184
+$c-ffd5b1: #ffd5b1
+$c-7f7f7f: #7f7f7f
+$c-ffd0a8: #ffd0a8
+$c-f67e56: #f67e56
+$fz24: 24px
+$fz48: 48px
+$fz36: 36px
+$fz30: 30px
+$c-3f3f3f: #3f3f3f
+$c-202020: #202020
+$c-red: #891313
+
+
+.modal-wrap
+	width: 100%
+	height: 100%
+	z-index: 10000
+	position: fixed
+	left: 0
+	top: 0
+	background: rgba(117, 117, 117, .5)
+	visibility: hidden
+	opacity: 0
+	transition: all .5s linear
+	&.show
+		opacity: 1
+		visibility: visible
+.modal 
+	position: relative
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	height: auto
+.container-modal
+	display: flex
+	justify-content: center
+.modal-desc
+	width: 50%
+	background-color: #fff
+	padding: 20px 45px 
+.modal-back
+	width: 100%
+	display: flex
+	justify-content: flex-end
+	margin: 0 0 10px
+	align-items: center
+	background-color: transparent
+	color: $c-b18184
+	outline: none
+	border: none
+	cursor: pointer
+	font-family: $ffmon
+	font-size: $fz18
+	letter-spacing: .2px
+.modal-desc-title
+	color: $c-red
+	text-align: center
+	line-height: .8
+	letter-spacing: .5px
+	font-size: $fz36
+	font-family: $ffmer-b
+	margin: 0 0 25px
+.modal-desc-subtitle
+	color: $c-3f3f3f
+	font-size: $fz20
+	font-family: $ffmon
+	font-size: $fz20
+	line-height: 1.8
+	text-align: center
+	letter-spacing: -0.6px
+	margin: 0 0 30px 0
+.modal-inputs
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.modal-input
+	border: 2px solid #ddd
+	border-radius: 5px
+	width: 100%
+	max-height: 59px
+	height: 100%
+	padding: 15px 20px
+	margin: 0 0px 28px 
+	outline: none
+	font-family: $ffmon
+	font-size: $fz14
+	color: #888888
+.modalbutton
+	color: #fff
+	font-family: $ffos
+	font-size: $fz18
+	background-color: $c-red
+	outline: none
+	border: none
+	cursor: pointer
+	padding: 15px 0
+	min-width: 290px
+	width: 100%
+	border-radius: 5px
+	margin: 0 auto
+	border: 1px solid transparent
+	transition: all .5s linear
+	&:hover
+		border: 1px solid $c-red
+		background-color: transparent
+		color: $c-red

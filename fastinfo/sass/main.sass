@@ -1,0 +1,426 @@
+@import "reset"
+@import "fonts"
+@import "modal"
+
+
+
+
+
+$fz14: 14px
+$fz16: 16px
+$fz32: 32px
+$fz64: 64px
+$fz12: 12px
+$fz18: 18px
+$c-fff: #fff
+$ffmon: 'Montserrat', sans-serif
+$ffmon-b: 'Montserrat-Bold', sans-serif
+$ffmer-b: 'Merriweather-Bold', serif
+$ffos: 'Open Sans', sans-serif
+$ffd: 'Dancing Script', cursive
+$c-b18184: #b18184
+$c-ffd5b1: #ffd5b1
+$c-red: #891313
+$c-brwon: #29140A
+$fz24: 24px
+$fz48: 48px
+$fz36: 36px
+$fz56: 56px
+
+
+//media
+.container
+	max-width: 1140px
+	width: 100%
+	padding: 0 15px
+	margin: 0 auto
+//
+section 
+	max-width: 100%
+	width: 100vw
+*
+	box-sizing: border-box
+body
+	background-color: #fffefa
+body.hidden
+	overflow: hidden
+.btn
+	color: #fff
+	font-family: $ffos
+	font-size: $fz18
+	background-color: $c-red
+	outline: none
+	border: none
+	cursor: pointer
+	padding: 15px 0
+	min-width: 290px
+	border-radius: 5px
+	margin: 0 25px
+	border: 1px solid transparent
+	transition: all .5s linear
+	&:hover
+		border: 1px solid $c-red
+		background-color: transparent
+		color: $c-red
+/////////////////////header//////////////////////
+.header
+	background-color: #4A76A8
+	padding: 15px 0
+	z-index: 10
+.header-wrap
+	display: flex
+	justify-content: space-between
+	align-items: center
+.header-logo
+	color: $c-fff
+	font-size: $fz48
+	font-family: $ffd
+	display: block
+.header-nav
+	display: flex
+	justify-content: space-between
+	align-items: center
+	max-width: 250px
+	width: 100%
+.header-nav-btn
+	color: $c-fff
+	font-family: $ffmon
+	font-size: $fz18
+	position: relative
+	&::after
+		transition: all .5s linear
+		position: absolute
+		width: 0%
+		height: 2px
+		content: ''
+		bottom: -5px
+		left: 0
+		background-color: #fff
+	&:hover
+		&::after
+			width: 100%
+.nav-mob
+	display: none
+.header.main 
+	background-color: transparent
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+.header.main.open
+	background-color: $c-brwon
+	z-index: 1111
+	position: fixed
+.nav-mob-humburger
+	display: none
+////////////////////footer////////////////
+.footer
+	padding: 20px 0
+	border-top: 1px solid $c-brwon
+	background-color: $c-brwon
+.footer-wrap
+	display: flex
+	justify-content: space-between
+	align-items: center
+	color: $c-7f7f7f
+	font-size: $fz16
+	font-family: $ffmon
+.footer-desc
+	max-width: 255px
+	width: 100%
+	line-height: 1.8
+	letter-spacing: .2px
+
+.footer-addres
+	max-width: 272px
+	width: 100%
+	line-height: 1.8
+	letter-spacing: .2px
+.footer-phone
+	max-width: 150px
+	width: 100%
+	line-height: 1.8
+	letter-spacing: .2px
+	a 
+		color: $c-7f7f7f
+	span
+		color: #b28d8d
+.footer-sm
+	max-width: 150px
+	width: 100%
+	line-height: 1.8
+.footer-fb-link
+	display: block
+	color: #475993
+.footer-insta-link
+	color: $c-7f7f7f
+//////////////////////////////////////
+.index
+	width: 100%
+	height: 100vh
+	max-height: 100%
+	background: url(../img/index-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	position: relative
+	&:after
+		content: ''
+		top: 0
+		left: 0
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0 , 0 , .5)
+.index-text
+	height: 100vh
+	padding: 70px 0 0 
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #F4F5D3
+	font-family: $ffmer-b
+	width: 100%
+	max-height: 100%
+	z-index: 1
+	font-size: $fz56
+	text-align: center
+	line-height: 1.2
+.index-wrap
+	display: flex
+	justify-content: center
+	align-items: center
+//////////////////////////////////////
+.index-desc
+	padding: 150px 0
+.index-desc-title
+	text-align: center
+	width: 100%
+	padding: 0px 0 50px
+	color: #000
+	font-family: $ffmer-b
+	font-size: $fz56
+.index-desc-subtitle
+	font-family: $ffmon
+	font-size: $fz18
+	line-height: 1.5
+	padding: 0 0 50px
+.index-btn
+	display: flex
+	justify-content: center
+.advantage-title
+	text-align: center
+	width: 100%
+	padding: 0px 0 50px
+	color: #000
+	font-family: $ffmer-b
+	font-size: $fz56
+.advantage-items
+	display: flex
+	justify-content: space-around
+	align-items: center
+	padding: 0 0 150px 
+.advantage-item
+	display: flex
+	flex-direction: column
+	justif-content: center
+	align-items: center
+	width: 30%
+.advantage-item-img
+	margin: 20px 0
+	display: flex
+	align-items: center
+	justify-content: center
+	img
+		max-width: 100%
+		height: auto
+.advantage-item-desc
+	font-family: $ffos
+	font-size: $fz18
+	color: #000
+	text-align: center
+	line-height: 1.5
+.footer-links
+	display: flex
+	justify-content: center
+	align-items: center
+.header-nav-btn
+	display: block
+	margin: 0 15px
+.books
+	padding: 0 0 150px
+.books-title
+	font-size: $fz56
+	font-family: $ffmer-b
+	color: #000
+	text-align: center
+	width: 100%
+	padding: 0 0 50px
+.books-items
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	algn-items: center
+.books-item
+	width: 30%
+	background-color: #f7f7f7
+	border-radius: 10px
+	border: 1px solid #f2f2f2
+	padding: 20px
+.books-item-img
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0 0 10px
+	img 
+		max-width: 100%
+		height: auto
+.books-item-title
+	font-size: 	$fz24
+	margin: 0 0 10px
+	color: #000
+	font-family: 	$ffos
+	line-height: 	1.5
+	letter-spacing: .5px
+.books-item-desc
+	font-family: 	$ffmon
+	font-size: 	$fz18
+	line-height: 	1.2
+	margin: 0 0 10px
+.books-btn
+	margin: 0 auto
+	min-width: 80%
+	width: 100%
+	text-transform: uppercase
+//////////////media///////////////////
+@media all and (max-width: 1024px)
+	.modal-desc
+		width: 70%
+	.books-item
+		width: 32%
+		padding: 15px
+	.header
+		z-index: 1001
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		padding: 15px 0
+	.header-nav
+		display: none
+	.header-fb
+		display: none
+	.header-logo
+		margin: 0 0 0 auto
+	.nav-mob-huburger-span
+		width: 100%
+		height: 4px
+		background-color: #fff
+		border-radius: 2px
+		transition: all .5s linear
+	.nav-mob-humburger
+		display: flex
+		flex-direction: column
+		height: 20px
+		justify-content: space-between
+		width: 30px
+		margin: 0 0 0 auto
+		position: relative
+		&.open
+			.nav-mob-huburger-span:nth-child(2)
+				width: 0
+			.nav-mob-huburger-span:nth-child(1)
+				position: absolute
+				left: 0
+				top: 50%
+				transform: rotate(45deg)
+			.nav-mob-huburger-span:nth-child(3)
+				position: absolute
+				left: 0
+				top: 50%
+				transform: rotate(-45deg)
+	.nav-mob
+		display: block
+		position: fixed
+		background-color: #fff
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: 1000
+		opacity: 0
+		visibility: hidden
+		transition: all .5s linear
+		&.open
+			visibility: visible
+			opacity: 1
+	.nav-mob-list
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 100%
+		height: 70%
+		margin: 15% 0
+		text-align: center
+	.header-nav-btn-mob
+		color: #000
+		font-size: $fz16
+		font-family: $ffmon-b
+		letter-spacing: 1px
+		transition: all .5s linear
+		margin: 20px 0
+		&.active
+			color: #ffd0a8
+@media all and (max-width: 768px)
+	.index-text
+		font-size: $fz32
+		max-width: 560px
+		width: 100%
+	.index-desc-title, .advantage-title, .books-title
+		font-size: $fz32
+	.advantage-items
+		padding: 0 0 80px
+		flex-direction: column
+	.advantage-item
+		width: 100%
+		margin: 20px 0
+	.index-desc
+		padding: 80px 0
+	.index-desc-subtitle
+		text-align: center
+	.books
+		padding: 0 0 100px
+	.books-item
+		width: 45%
+		margin: 15px 0 0
+@media all and (max-width: 667px)
+	.books-item
+		width: 100%
+		margin: 15px 0 0
+	.btn-create, .btn-callback
+		min-width: 215px
+		margin: 0 10px
+	.modal-desc
+		width: 100%
+@media all and (max-width: 480px)
+	.index-btn
+		flex-direction: column
+	.btn
+		min-width: 100%
+		margin: 15px auto 
+	.footer-wrap
+		flex-direction: column-reverse
+	.footer-links
+		flex-direction: column
+	.header-nav-btn
+		margin: 10px auto
+	.modal-desc-title
+		font-size: 28px
+	.modal-desc
+		padding: 15px 20px
+	.modal-desc-subtitle
+		font-size: $fz18
+	.modalbutton
+		min-width: 100%
+	.modal-input
+		margin: 0 0 18px

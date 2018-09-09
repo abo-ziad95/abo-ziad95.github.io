@@ -1,0 +1,23 @@
+$folder: '../fonts'
+
+// @mixin font-face($family, $filename, $folder)
+//   @font-face
+//     font-family: $family
+//     src: url('#{$folder}/#{$filename}.eot')
+//     src: url('#{$folder}/#{$filename}.eot?#iefix') format("embedded-opentype")
+//     src: url('#{$folder}/#{$filename}.woff') format("woff")
+//     src: url('#{$folder}/#{$filename}.ttf') format("truetype")
+//     src: url('#{$folder}/#{$filename}.svg#08bb4ba465a902745fc23c83a5d9fdc2') format("svg")
+
+@mixin font-face($family, $filename, $folder)
+  @font-face
+    font-family: $family
+    src: url('#{$folder}/#{$filename}.ttf') format("truetype")
+
+
+
+@include font-face("Montserrat-Regular", "Montserrat-Regular", $folder)
+@include font-face("Merriweather-Bold", "Merriweather-Bold", $folder)
+@include font-face("Merriweather-Regular", "Merriweather-Regular", $folder)
+@include font-face("Montserrat-Bold", "Montserrat-Bold", $folder)
+@include font-face("OpenSans-Regular", "OpenSans-Regular", $folder)

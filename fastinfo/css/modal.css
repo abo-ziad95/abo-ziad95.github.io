@@ -1,0 +1,120 @@
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(117, 117, 117, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .modal-wrap.show {
+    opacity: 1;
+    visibility: visible; }
+
+.modal {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: auto; }
+
+.container-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.modal-desc {
+  width: 50%;
+  background-color: #fff;
+  padding: 20px 45px; }
+
+.modal-back {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  color: #b18184;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: .2px; }
+
+.modal-desc-title {
+  color: #891313;
+  text-align: center;
+  line-height: .8;
+  letter-spacing: .5px;
+  font-size: 36px;
+  font-family: "Merriweather-Bold", serif;
+  margin: 0 0 25px; }
+
+.modal-desc-subtitle {
+  color: #3f3f3f;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: -0.6px;
+  margin: 0 0 30px 0; }
+
+.modal-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.modal-input {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-height: 59px;
+  height: 100%;
+  padding: 15px 20px;
+  margin: 0 0px 28px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #888888; }
+
+.modalbutton {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background-color: #891313;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px 0;
+  min-width: 290px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .modalbutton:hover {
+    border: 1px solid #891313;
+    background-color: transparent;
+    color: #891313; }
