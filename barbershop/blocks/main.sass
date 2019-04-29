@@ -1,0 +1,399 @@
+//*********************************************
+//		Assets
+//*********************************************
+@import "_base/reset"
+@import "_base/grid"
+@import "_base/fonts"
+
+//***********************COLORS & FONTS***********************//
+$header-font-bold: "BebasNeueBold", sans-serif
+$header-font-reg: "BebasNeueRegular", sans-serif
+$main-font-regular: "GothamProRegular", sans-serif
+$main-font-Medium: "GothamProMedium", sans-serif
+$main-font-Light: "GothamProLight", sans-serif
+//*********************************************
+//		Blocks
+//*********************************************
+.btn
+  outline: none
+  border: 1px solid #a99079
+  border-radius: 5px
+  max-width: 300px
+  width: 100%
+  cursor: pointer
+  +flex()
+  height: 60px
+  transition: all .4s linear
+  background-color: transparent
+  color: #a99079
+  font-family: $header-font-reg
+  letter-spacing: 3px
+  font-size: 18px
+  &:hover
+    background-color: #c4ac97
+    color: #fff
+  &.small
+    height: 40px
+    border: 1px solid #fff
+    color: #ffffff
+    max-width: 200px
+    margin: 20px 0 0 0
+    &:hover
+      color: #a99079
+      background-color: #fff
+  @media #{$xs}
+    height: 58px
+    font-size: 15px
+    max-width: 250px
+    margin: 0 auto
+.section
+  width: 100vw
+  height: 100vh
+  max-width: 100%
+  max-height: 100%
+  position: relative
+.row
+  +flex(space-between)
+.page
+  position: relative
+.first
+  background: url("../img/1.jpg") center no-repeat
+  background-size: cover
+  position: relative
+  +flex()
+  &::after
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,.4)
+    content: ''
+    left: 0
+    top: 0
+  &-txt
+    color: #ffffff
+    font-family: $main-font-Light
+    font-size: 40px
+    letter-spacing: 2px
+    text-align: center
+    margin: 0 0 50px 0
+    @media #{$s}
+      font-size: 30px
+    @media #{$xs}
+      font-size: 20px
+    span
+      display: block
+      font-size: 130px
+      margin: 0 0 30px 0
+      font-family: 'Merriweather', serif
+      @media #{$l}
+        font-size: 120px
+      @media #{$m}
+        font-size: 100px
+      @media #{$s}
+        font-size: 80px
+      @media #{$s}
+        font-size: 40px
+  &-btn
+    background-color: #a99079
+    color: #fff
+    margin: 0 auto
+    &:hover
+      background-color: #c4ac97
+.header
+  position: fixed
+  top: 0px
+  left: 0
+  width: 100%
+  z-index: 10
+  padding: 15px 30px
+  +flex(space-between)
+  &-logo
+    max-width: 95px
+    @media #{$s}
+      max-width: 60px
+    @media #{$xs}
+      transition: margin .5s linear
+.menu-wrap
+  height: 100vh
+  position: fixed
+  z-index: 11
+  max-width: 320px
+  padding: 15px 20px
+  width: 100%
+  top: 0
+  right: -320px
+  background: rgba(0, 0, 0, .9)
+  background-size: cover
+  +flex(center, flex-start, column)
+  transition: right .5s linear
+  &.active
+    right: 0px
+.menu-lang-wrap
+  font-size: 40px
+  letter-spacing: 3px
+  font-family: $header-font-reg
+  color: #ffffff
+  width: 100%
+  max-width: 200px
+  +flex(space-between)
+  position: relative
+  margin: 0 auto 50px auto
+  & .line
+    position: absolute
+    left: 0px
+    bottom: 0
+    height: 3px
+    width: 40px
+    background-color: #fff
+    border-radius: 5px
+    content: ''
+    transition: left .3s linear
+.menu-lag-item
+  cursor: pointer
+.menu-list
+  +flex(space-between, flex-start, column)
+  height: 200px
+  margin: 0 0 50px 0
+  &-item
+    color: #ffffff
+    font-size: 34px
+    cursor: pointer
+    letter-spacing: 4px
+    font-family: $header-font-reg
+    border-bottom: 2px solid transparent
+    &:hover
+      border-bottom: 2px solid #fff
+.menu-links
+  +flex(space-between)
+  max-width: 180px
+  width: 100%
+.burger-wrap
+  width: 50px
+  height: 50px
+  background-color: rgba(0,0,0, .3)
+  position: relative
+  border-radius: 100%
+  cursor: pointer
+  z-index: 1000
+  transition: all .3s linear .2s
+  &.active
+    margin: 0 200px 0 0
+    background-color: #fff
+    .burger-item
+      background-color: #000
+  &:hover
+    background-color: #fff
+    .burger-item
+      background-color: #000
+.burger-item
+  height: 2px
+  width: 60%
+  position: absolute
+  left: 20%
+  margin: 3px 0
+  background-color: #fff
+  transition: all .5s linear
+  &:nth-child(1)
+    top: 10px
+  &:nth-child(2)
+    top: 20px
+  &:nth-child(3)
+    top: 30px
+.burger-wrap.active .burger-item:nth-child(2)
+  display: none
+.burger-wrap.active .burger-item:nth-child(1)
+  top: 20px
+  transform: rotate(45deg)
+.burger-wrap.active .burger-item:nth-child(3)
+  top: 20px
+  transform: rotate(-45deg)
+.second
+  background: url("../img/2.jpg") top no-repeat
+  background-size: cover
+  position: relative
+  +flex()
+.title
+  color: #fff
+  font-size: 80px
+  letter-spacing: 4px
+  font-family: $header-font-bold
+  margin: 0 0 30px 0
+  @media #{$s}
+    font-size: 70px
+  &.center
+    text-align: center
+  @media #{$xs}
+    font-size: 44px
+.title-img
+  max-width: 60px
+  height: auto
+  @media #{$s}
+    max-width: 50px
+  @media #{$xs}
+    display: none
+.subtitle
+  font-size: 34px
+  margin: 0 0 10px 0
+  font-family: $main-font-Medium
+  @media #{$s}
+    font-size: 26px
+  @media #{$s}
+    font-size: 22px
+.dots
+  width: 100%
+  height: 12px
+  margin: 0 2px
+  background: url('../img/circle.svg') repeat-x bottom
+.services
+  +flex(space-between)
+  margin: 0 0 40px 0
+  @media #{$s}
+    +flex(space-between, flex-start, column)
+  &-item
+    width: 46%
+    color: #fff
+    @media #{$s}
+      width: 100%
+      margin: 0 0 20px 0
+    &-field
+      +flex(space-between)
+      width: 100%
+      color: #fff
+      overflow: hidden
+      margin: 0 0 8px 0
+      &-wrap
+        +flex(flex-start, flex-start, column)
+        height: 200px
+      &-txt
+        font-family: $main-font-regular
+        font-size: 20px
+        z-index: 10
+        display: inline-block
+        white-space: nowrap
+        @media #{$xs}
+          font-size: 18px
+.three
+  background: url("../img/3.jpg") top no-repeat
+  background-size: cover
+  position: relative
+  +flex()
+  &::after
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,.6)
+    content: ''
+    left: 0
+    top: 0
+.desc-wrap
+  +flex(space-between, flex-start)
+  @media #{$s}
+    +flex(space-between, flex-start, column)
+.desc-item
+  width: 42%
+  color: #ffffff
+  font-size: 20px
+  margin: 0 0 10px 0
+  font-family: $main-font-regular
+  line-height: 1.6
+  @media #{$s}
+    width: 100%
+  @media #{$s}
+    font-size: 18px
+.four
+  background: url("../img/4.jpg") top no-repeat
+  background-size: cover
+  position: relative
+  +flex()
+  &::after
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,.6)
+    content: ''
+    left: 0
+    top: 0
+.slider-item img
+  max-width: 350px
+  transform: scale(1.4)
+  z-index: -1
+.slider
+  overflow: hidden
+  width: 2100px
+  @media #{$m}
+    width: 100%
+  &-wrap
+    +flex()
+    @media #{$m}
+      +flex(space-between, center, row, wrap)
+  &-item
+    margin: 0 25px
+    max-width: 300px
+    height: 300px
+    border-radius: 100%
+    overflow: hidden
+    +flex()
+    cursor: pointer
+    position: relative
+    &:hover .info-wrap
+      opacity: 1
+    @media #{$m}
+      margin: 20px auto
+.info-wrap
+  position: absolute
+  width: 100%
+  height: 100%
+  background-color: rgba(169, 144, 121, .5)
+  opacity: 0
+  border-radius: 100%
+  overflow: hidden
+  +flex(center, center, column)
+  transition: all .5s linear
+.name
+  font-size: 40px
+  font-family: $main-font-Medium
+  color: #fff
+.title.black
+  color: #444545
+  @media #{$s}
+    text-align: center
+.five
+  background-color: #fff
+  +flex()
+.contacts-wrap
+  +flex(space-between)
+  margin: 0 0 30px 0
+  @media #{$s}
+    +flex(space-between, flex-start, column)
+.contact-item
+  color: #a99079
+  font-size: 28px
+  max-width: 30%
+  line-height: 1.5
+  width: 100%
+  font-family: $main-font-Medium
+  @media #{$s}
+    max-width: 100%
+    width: 100%
+    text-align: center
+  @media #{$xs}
+    font-size: 24px
+.contact-item span
+  display: block
+  width: 100%
+.contact-item a
+  margin: 0 20px
+@media #{$s}
+  .btn.contact
+    margin: 0 auto
+@media #{$xs}
+  .margin
+    margin: 0 0 0 -130px
+.section.four
+  @media #{$m}
+    height: 100%
+    padding: 50px 0
+.section.second
+  @media #{$m}
+    height: 100%
+    padding: 50px 0
