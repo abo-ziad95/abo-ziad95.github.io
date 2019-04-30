@@ -1,6 +1,7 @@
 $(document).ready(function () {
-  console.log('run')
-  $('.page').click(function () {
-    console.log('click')
-  })
+  $('.header-btn, .scroll-btn, .scroll').click(function(e){
+    e.preventDefault()
+    let anchor = $(this).data('anchor')
+    $('html, body').animate({scrollTop: $(anchor).offset().top}, 500)
+  });
 })

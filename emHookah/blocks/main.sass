@@ -6,11 +6,341 @@
 @import "_base/fonts"
 
 //***********************COLORS & FONTS***********************//
-$header-font-bold: "BebasNeueBold", sans-serif
-$header-font-reg: "BebasNeueRegular", sans-serif
-$main-font-regular: "GothamProRegular", sans-serif
-$main-font-Medium: "GothamProMedium", sans-serif
-$main-font-Light: "GothamProLight", sans-serif
+$headers-font: 'AC Boucle', sans-serif
+$main-font-bold: 'Roboto-Bold', sans-serif
+$main-font-black: 'Roboto-Black', sans-serif
+$main-font-Light: 'Roboto-Light', sans-serif
+$main-font-Medium: 'Roboto-Medium', sans-serif
+$main-font-Regular: 'Roboto-Regular', sans-serif
 //*********************************************
 //		Blocks
 //*********************************************
+.page
+  position: relative
+  background-color: #E9EFF9
+.header
+  padding: 20px 0 0 0
+  width: 100%
+  z-index: 100
+  &-wrap
+    +flex(space-between)
+  &-btn
+    color: #191919
+    font-size: 16px
+    font-family: $main-font-Medium
+    cursor: pointer
+    position: relative
+    text-transform: uppercase
+    background-color: #E9EFF9
+    transition: color linear .3s
+    &:hover
+      color: #7D0A0B
+    &::after
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      content: ''
+      height: 100%
+      background: linear-gradient(to bottom, rgba(233, 239, 249,.8) 0%,rgba(255, 255, 255,0) 100%)
+.soc
+  width: 75px
+  background-color: #fff
+  height: 100vh
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 1
+  +flex(center, flex-start)
+  &-wrap
+    +flex(space-between, center, column)
+    height: 300px
+    margin: 200px 0 0 0
+  &-link
+    transform: rotate(-90deg)
+    color: #B3B3B3
+    font-size: 16px
+    font-family: $main-font-Regular
+    transition: color linear .3s
+    &:hover
+      color: #333333
+.about
+  margin: 50px 0 0 0
+  position: relative
+  &::after
+    position: absolute
+    right: 0
+    top: 0
+    content: ''
+    background: url("../img/first-bg.png") no-repeat center
+    background-size: cover
+    width: 720px
+    height: 450px
+  &-blocks
+    +flex(flex-start)
+  &-block
+    width: 50%
+    height: 450px
+    +flex(flex-start)
+    span
+      max-width: 305px
+      color: #7D0A0B
+      font-family: $headers-font
+      font-size: 72px
+      display: block
+.line
+  height: 110px
+  background-color: #034CB7
+  width: 100%
+  position: relative
+  z-index: 11
+  &.large
+    height: auto
+    padding: 70px 0
+    &::after
+      position: absolute
+      right: 0
+      top: 0
+      content: ''
+      background: url("../img/catering-bg.png") no-repeat center
+      background-size: cover
+      height: 100%
+      width: 195px
+.wrap
+  width: 51%
+  margin: 0 0 0 auto
+  +flex(space-between)
+.scroll-btn
+  background-color: transparent
+  +flex(center, center, column)
+  margin: 0 0
+  height: 110px
+  width: 20px
+  cursor: pointer
+  span
+    transform: rotate(90deg)
+    margin: 0 0 15px 0px
+    color: #fff
+    font-size: 18px
+    font-family: $headers-font
+    font-weight: 400
+.list-wrap
+  +flex(space-between)
+  width: 460px
+.list-item
+  color: #ffffff
+  font-size: 16px
+  font-family: $main-font-Light
+  list-style-type: disc
+.list-item:nth-child(1)
+  max-width: 210px
+.list-item:nth-child(2)
+  max-width: 230px
+.title
+  font-size: 48px
+  margin: 0 0 40px 0
+  font-family: $headers-font
+  span
+    display: block
+  &.white
+    color: #fff
+.why
+  padding: 100px 0
+  position: relative
+  &::after
+    position: absolute
+    content: ''
+    width: 345px
+    height: 100%
+    top: 0
+    background: url("../img/why-bg.png") no-repeat center
+    background-size: cover
+    right: 0
+  &-items
+    +flex(space-between, center, row, wrap)
+  &-item
+    width: 312px
+    margin: 0 0 30px 0
+    background-color: #fff
+    +flex()
+    padding: 40px 0
+    &:last-child
+      background-color: #D0DFF9
+    span
+      margin: 0 0 0 15px
+      font-family: $main-font-Light
+      font-size: 18px
+    &-span-ft
+      max-width: 131px
+    &-span-sc
+      max-width: 178px
+    &-span-th
+      max-width: 190px
+    &-span-fo
+      max-width: 183px
+    &-span-fi
+      max-width: 115px
+span.why-item-span-se
+  font-size: 36px
+  font-family: $headers-font
+  margin: 0 10px 0 0
+.row
+  +flex(flex-start, flex-end)
+.text
+  width: 55%
+.sm-margin
+  margin: 0 0 15px 0
+  color: #ffffff
+.subtitle
+  font-size: 18px
+  color: #fff
+  line-height: 1.3
+  font-family: $main-font-Light
+.button-wrap
+  +flex(flex-end, center)
+  margin: 0 0 0 100px
+.btn
+  width: 174px
+  height: 47px
+  border: 1px solid #ffffff
+  +flex()
+  text-transform: uppercase
+  background-color: transparent
+  color: #ffffff
+  font-family: $main-font-Regular
+  font-size: 18px
+  transition: all linear .4s
+  cursor: pointer
+  &:hover
+    color: #7D0A0B
+.outsourcing
+  padding: 150px 0
+  position: relative
+  &::after
+    position: absolute
+    content: ''
+    right: 0
+    top: 0
+    width: 345px
+    height: 100%
+    background: url("../img/outsoursing-bg.png") no-repeat center
+    background-size: cover
+  &-blocks
+    +flex(flex-start, flex-start)
+  &-block
+    margin: 0 50px 0 0
+    &-text
+      color: #333
+      font-size: 18px
+      margin: 0 0 20px 0
+      line-height: 1.2
+      font-family: $main-font-Light
+.events
+  padding: 100px 0
+  background-color: #034CB7
+  position: relative
+  &::after
+    position: absolute
+    content: ''
+    right: 0
+    top: 0
+    width: 345px
+    height: 100%
+    background: url("../img/events-bg.png") no-repeat center
+    background-size: cover
+  &-items
+    +flex(space-between, center, row, wrap)
+    &.start
+      +flex(space-around, center, row, wrap)
+  &-item
+    width: 234px
+    margin: 0 0 30px 0
+    color: #ffffff
+    +flex()
+    padding: 40px 0
+    span
+      margin: 0 0 0 10px
+      font-family: $main-font-Light
+      font-size: 18px
+      cursor: default
+.contacts
+  background-color: #002863
+  padding: 100px 0
+  position: relative
+  z-index: 10
+  & .title
+    color: #fff
+  &::after
+    position: absolute
+    content: ''
+    right: 0
+    top: 0
+    width: 345px
+    height: 100%
+    background: url("../img/Contacts-bg.png") no-repeat center
+    background-size: cover
+  &-row
+    +flex(space-between, flex-start)
+  &-wrap
+    width: 50%
+  &-blocks
+    +flex(space-between, flex-start)
+  &-block
+    width: 50%
+    &-link
+     +flex(flex-start, center)
+     margin: 0 0 20px 0
+     span
+       display: inline-block
+       margin: 0 0 0 10px
+       font-family: $main-font-Light
+       font-size: 18px
+       color: #ffffff
+       &.margin:first-child
+         margin: 0 0 0 32px
+       a
+         color: #ffffff
+.form
+  +flex(center, flex-start, column)
+  width: 100%
+  &-label
+    position: relative
+    width: 100%
+    margin: 0 0 40px 0
+    span
+      font-family: $main-font-Regular
+      color: #6283B3
+      font-size: 14px
+      position: absolute
+      left: 0
+      top: 0
+      transition: all linear .3s
+    input
+      outline: none
+      background-color: transparent
+      border: 1px solid transparent
+      border-bottom:  1px solid #fff
+      font-family: $main-font-Regular
+      color: #fff
+      font-size: 14px
+      width: 100%
+      &:focus + span
+        top: -20px
+        color: #fff
+  &-wrap
+    width: 35%
+.footer
+  padding: 20px 0
+  background-color: #00183B
+  z-index: 10
+  position: relative
+  &-row
+    +flex(center, center, column)
+    img
+      margin: 0 0 10px 0
+    span
+      color: #ffffff
+      font-family: $main-font-Light
+      font-size: 12px
+.scroll
+  cursor: pointer
