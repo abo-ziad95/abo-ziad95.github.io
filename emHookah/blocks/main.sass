@@ -18,12 +18,26 @@ $main-font-Regular: 'Roboto-Regular', sans-serif
 .page
   position: relative
   background-color: #E9EFF9
+  &.hidden
+    overflow: hidden
 .header
   padding: 20px 0 0 0
   width: 100%
   z-index: 100
+  @media #{$m}
+    background-color: rgba(66, 134, 244, .5)
+    padding: 10px 0
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
   &-wrap
     +flex(space-between)
+    @media #{$m}
+      display: none
+  &-logo img
+    @media #{$m}
+      max-width: 100px
   &-btn
     color: #191919
     font-size: 16px
@@ -33,16 +47,19 @@ $main-font-Regular: 'Roboto-Regular', sans-serif
     text-transform: uppercase
     background-color: #E9EFF9
     transition: color linear .3s
-    &:hover
-      color: #7D0A0B
+    &:hover:after
+      width: 100%
     &::after
       position: absolute
-      top: 0
+      bottom: -10px
       left: 0
-      width: 100%
+      width: 0%
       content: ''
-      height: 100%
-      background: linear-gradient(to bottom, rgba(233, 239, 249,.8) 0%,rgba(255, 255, 255,0) 100%)
+      height: 1px
+      background: #000
+      transition: all linear .3s
+    @media #{$m}
+      background-color: transparent
 .soc
   width: 75px
   background-color: #fff
@@ -52,6 +69,8 @@ $main-font-Regular: 'Roboto-Regular', sans-serif
   top: 0
   z-index: 1
   +flex(center, flex-start)
+  @media #{$s}
+    display: none
   &-wrap
     +flex(space-between, center, column)
     height: 300px
@@ -67,6 +86,9 @@ $main-font-Regular: 'Roboto-Regular', sans-serif
 .about
   margin: 50px 0 0 0
   position: relative
+  height: 71vh
+  @media #{$m}
+    margin: 100px 0 0 0
   &::after
     position: absolute
     right: 0
@@ -76,27 +98,39 @@ $main-font-Regular: 'Roboto-Regular', sans-serif
     background-size: cover
     width: 720px
     height: 450px
+    @media #{$l}
+      width: 420px
+      height: 350px
+    @media #{$m}
+      width: 0
+      height: 0
   &-blocks
     +flex(flex-start)
   &-block
     width: 50%
     height: 450px
     +flex(flex-start)
+    @media #{$m}
+      +flex(center)
+      width: 100%
     span
       max-width: 305px
       color: #7D0A0B
       font-family: $headers-font
       font-size: 72px
       display: block
+      @media #{$xs}
+        font-size: 52px
 .line
   height: 110px
   background-color: #034CB7
   width: 100%
   position: relative
-  z-index: 11
+  z-index: 10
   &.large
     height: auto
     padding: 70px 0
+    z-index: 0
     &::after
       position: absolute
       right: 0
@@ -106,10 +140,6 @@ $main-font-Regular: 'Roboto-Regular', sans-serif
       background-size: cover
       height: 100%
       width: 195px
-.wrap
-  width: 51%
-  margin: 0 0 0 auto
-  +flex(space-between)
 .scroll-btn
   background-color: transparent
   +flex(center, center, column)
@@ -125,23 +155,29 @@ $main-font-Regular: 'Roboto-Regular', sans-serif
     font-family: $headers-font
     font-weight: 400
 .list-wrap
-  +flex(space-between)
-  width: 460px
+  +flex(space-around)
+  width: 100%
 .list-item
   color: #ffffff
   font-size: 16px
   font-family: $main-font-Light
   list-style-type: disc
-.list-item:nth-child(1)
-  max-width: 210px
-.list-item:nth-child(2)
-  max-width: 230px
+  @media #{$m}
+    list-style-type: none
+  @media #{$s}
+    font-size: 13px
+  @media #{$xs}
+    display: none
 .title
   font-size: 48px
   margin: 0 0 40px 0
   font-family: $headers-font
   span
     display: block
+    @media #{$m}
+      display: inline
+  @media #{$xs}
+    font-size: 36px
   &.white
     color: #fff
 .why
@@ -158,36 +194,70 @@ $main-font-Regular: 'Roboto-Regular', sans-serif
     right: 0
   &-items
     +flex(space-between, center, row, wrap)
+    @media #{$m}
+      +flex(space-around, center, row, wrap)
   &-item
     width: 312px
     margin: 0 0 30px 0
     background-color: #fff
     +flex()
     padding: 40px 0
+    @media #{$l}
+      width: 45%
+      padding: 30px 20px
+    @media #{$m}
+      padding: 20px 15px
+      height: 150px
+    @media #{$xs}
+      width: 90%
+      margin: 0 auto 20px auto
+      +flex(flex-start)
+      height: 100px
     &:last-child
       background-color: #D0DFF9
     span
       margin: 0 0 0 15px
       font-family: $main-font-Light
       font-size: 18px
+      @media #{$s}
+        font-size: 14px
     &-span-ft
       max-width: 131px
+      @media #{$l}
+        max-width: 100%
     &-span-sc
       max-width: 178px
+      @media #{$l}
+        max-width: 100%
     &-span-th
       max-width: 190px
+      @media #{$l}
+        max-width: 100%
     &-span-fo
       max-width: 183px
+      @media #{$l}
+        max-width: 100%
     &-span-fi
       max-width: 115px
+      @media #{$l}
+        max-width: 100%
 span.why-item-span-se
   font-size: 36px
   font-family: $headers-font
   margin: 0 10px 0 0
+  @media #{$m}
+    font-size: 30px
+  @media #{$s}
+    font-size: 25px
 .row
-  +flex(flex-start, flex-end)
+  +flex(flex-start, flex-end, row, wrap)
 .text
   width: 55%
+  @media #{$l}
+    width: 75%
+  @media #{$s}
+    width: 100%
+    margin: 0 0 20px
 .sm-margin
   margin: 0 0 15px 0
   color: #ffffff
@@ -196,9 +266,13 @@ span.why-item-span-se
   color: #fff
   line-height: 1.3
   font-family: $main-font-Light
+  @media #{$xs}
+    font-size: 14px
 .button-wrap
   +flex(flex-end, center)
   margin: 0 0 0 100px
+  @media #{$l}
+    margin: 0 auto
 .btn
   width: 174px
   height: 47px
@@ -213,6 +287,8 @@ span.why-item-span-se
   cursor: pointer
   &:hover
     color: #7D0A0B
+  @media #{$xs}
+    font-size: 14px
 .outsourcing
   padding: 150px 0
   position: relative
@@ -227,18 +303,30 @@ span.why-item-span-se
     background-size: cover
   &-blocks
     +flex(flex-start, flex-start)
+    @media#{$l}
+      +flex(flex-start, flex-start, row, wrap)
   &-block
     margin: 0 50px 0 0
+    @media #{$l}
+      width: 100%
+      margin: 0 auto 30px
+      +flex()
+    &:last-child
+      margin: 0
+      display: block
     &-text
       color: #333
       font-size: 18px
       margin: 0 0 20px 0
       line-height: 1.2
       font-family: $main-font-Light
+      @media #{$xs}
+        font-size: 14px
 .events
   padding: 100px 0
   background-color: #034CB7
   position: relative
+  z-index: 10
   &::after
     position: absolute
     content: ''
@@ -258,16 +346,25 @@ span.why-item-span-se
     color: #ffffff
     +flex()
     padding: 40px 0
+    @media #{$m}
+      width: 30%
+    @media #{$xs}
+      width: 45%
+      margin: 0 auto
+      padding: 15px 0
+      +flex(flex-start)
     span
       margin: 0 0 0 10px
       font-family: $main-font-Light
       font-size: 18px
       cursor: default
+      @media #{$xs}
+        font-size: 14px
 .contacts
   background-color: #002863
   padding: 100px 0
   position: relative
-  z-index: 10
+  z-index: 0
   & .title
     color: #fff
   &::after
@@ -280,13 +377,22 @@ span.why-item-span-se
     background: url("../img/Contacts-bg.png") no-repeat center
     background-size: cover
   &-row
-    +flex(space-between, flex-start)
+    +flex(space-between, flex-start, row, wrap)
   &-wrap
     width: 50%
+    @media #{$m}
+      width: 85%
+      margin: 0 auto
+    @media #{$s}
+      width: 100%
   &-blocks
     +flex(space-between, flex-start)
+    @media #{$xs}
+      +flex(space-between, flex-start, row, wrap)
   &-block
     width: 50%
+    @media #{$xs}
+      width: 85%
     &-link
      +flex(flex-start, center)
      margin: 0 0 20px 0
@@ -329,6 +435,11 @@ span.why-item-span-se
         color: #fff
   &-wrap
     width: 35%
+    @media #{$m}
+      width: 85%
+      margin: 0 auto 30px
+    @media #{$s}
+      width: 100%
 .footer
   padding: 20px 0
   background-color: #00183B
@@ -344,3 +455,57 @@ span.why-item-span-se
       font-size: 12px
 .scroll
   cursor: pointer
+.fixed
+  position: fixed
+  bottom: 0
+  left: 0
+.header-mob
+  display: none
+  @media #{$m}
+    +flex(space-between)
+.mob-humburger-wrap
+  width: 35px
+  height: 30px
+  position: relative
+  z-index: 2000
+  span
+    height: 5px
+    background-color: #fff
+    width: 100%
+    transform: rotate(0deg)
+    transition: .3s ease-in-out
+    position: absolute
+    &:nth-child(1)
+      top: 0px
+    &:nth-child(2)
+      top: 12px
+    &:nth-child(3)
+      top: 24px
+  &__open
+    span
+      &:nth-child(1)
+        transform: rotate(45deg)
+        top: 12px
+      &:nth-child(2)
+        width: 0
+      &:nth-child(3)
+        transform: rotate(-45deg)
+        top: 12px
+.mob-menu-wrap
+  display: none
+  @media #{$m}
+    visibility: hidden
+    position: fixed
+    opacity: 0
+    padding: 50px 0
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: 100
+    background-color: rgba(66, 134, 244, .5)
+    +flex(space-around, center, column)
+    transition: all .5s linear
+    &__open
+      visibility: visible
+      opacity: 1
