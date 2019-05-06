@@ -59,28 +59,23 @@ button {
   width: 100%;
   position: relative;
   overflow: hidden;
-  z-index: 1;
-  border: 1px solid aqua; }
+  z-index: 1; }
   @media (max-width: 1500px) {
     .container {
       max-width: 1050px; } }
   @media (max-width: 1200px) {
     .container {
-      max-width: 870px;
-      border: 1px solid blue; } }
+      max-width: 870px; } }
   @media (max-width: 1024px) {
     .container {
-      max-width: 620px;
-      border: 1px solid black; } }
+      max-width: 620px; } }
   @media (max-width: 768px) {
     .container {
-      max-width: 540px;
-      border: 1px solid green; } }
+      max-width: 540px; } }
   @media (max-width: 576px) {
     .container {
       width: 100%;
-      padding: 0 10px;
-      border: 1px solid red; } }
+      padding: 0 10px; } }
 
 @font-face {
   font-family: 'AC Boucle';
@@ -1060,7 +1055,7 @@ span.why-item-span-se {
   position: relative;
   z-index: 2000; }
   .mob-humburger-wrap span {
-    height: 5px;
+    height: 3px;
     background-color: #fff;
     width: 100%;
     -webkit-transform: rotate(0deg);
@@ -1073,9 +1068,9 @@ span.why-item-span-se {
     .mob-humburger-wrap span:nth-child(1) {
       top: 0px; }
     .mob-humburger-wrap span:nth-child(2) {
-      top: 12px; }
+      top: 10px; }
     .mob-humburger-wrap span:nth-child(3) {
-      top: 24px; }
+      top: 20px; }
   .mob-humburger-wrap__open span:nth-child(1) {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
