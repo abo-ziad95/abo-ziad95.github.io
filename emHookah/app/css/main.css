@@ -320,7 +320,8 @@ button {
       color: #7D0A0B;
       font-family: "AC Boucle", sans-serif;
       font-size: 72px;
-      display: block; }
+      display: block;
+      margin: 0 0 0 10%; }
       @media (max-width: 576px) {
         .about-block span {
           font-size: 52px; } }
