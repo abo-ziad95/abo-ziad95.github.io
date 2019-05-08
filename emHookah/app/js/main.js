@@ -9,7 +9,7 @@ $(document).ready(function () {
     $('html, body').animate({scrollTop: $(anchor).offset().top}, 500)
   });
   $(document).on("scroll", function(e) {
-    if($(document).scrollTop() > 100) {
+    if($(document).scrollTop() > 0) {
       $('#line').removeClass('fixed')
     } else{
       $('#line').addClass('fixed')
