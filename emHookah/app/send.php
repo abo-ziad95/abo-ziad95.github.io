@@ -4,7 +4,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $c = true;
 if ( $method === 'POST' ) {
 	$project_name = "emhookah.com";
-	$admin_email  = "contact@emhookah.com";
+	$admin_email  = "ammar.kira@gmail.com";
 	$form_subject ="order";
 	foreach ( $_POST as $key => $value ) {
 		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
