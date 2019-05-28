@@ -181,17 +181,17 @@
         <div class="title">
           Submit Your Application
         </div>
-        <form class="form">
+        <form class="form" action="send.php" method="post">
           <label for="name" class="form-label">
-            <input type="text" id="name">
+            <input type="text" id="name" name="name">
             <span>Name *</span>
           </label>
           <label for="phone" class="form-label">
-            <input type="text" id="phone">
+            <input type="text" id="phone" name="phone">
             <span>Your phone number *</span>
           </label>
           <label for="quotation" class="form-label">
-            <input type="text" id="quotation">
+            <input type="text" id="quotation" name="messageText">
             <span>Your question *</span>
           </label>
           <button class="btn" type="submit">Send</button>
