@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  $("form").submit(function() { //Change
+  $(".form").submit(function() {
+    console.log('run')//Change
     var th = $(this);
     $.ajax({
       type: "POST",
