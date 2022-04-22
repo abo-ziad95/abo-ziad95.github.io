@@ -24,7 +24,7 @@
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
-    "fullpage.js": "^3.0.4",
+    "fullpage.js": "^4.0.5",
     "gulp-uglify": "^3.0.1",
     "jquery": "^3.3.1"
   }
